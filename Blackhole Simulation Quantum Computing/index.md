@@ -1,9 +1,5 @@
-# Artifacts
+﻿# Artifacts
 
-## Bibliography
-
-- [citations.bib](citations.bib) _(bibtex)_
-  BibTeX entries for every artifact in this export plus their source papers.
 
 ## Theories
 
@@ -165,3 +161,8 @@
 
 - [Theory Store](data/theory-store.json) _(theory_store)_
   Is it possible to simulate black holes using quantum computing?
+
+## Bibliography
+
+- [citations.bib](citations.bib) _(bibtex)_
+  BibTeX entries for every artifact in this export plus their source papers.
