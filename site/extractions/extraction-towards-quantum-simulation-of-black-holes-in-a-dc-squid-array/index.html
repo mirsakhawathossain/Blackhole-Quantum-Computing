@@ -1,0 +1,3269 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="A research knowledge base on quantum simulation of black holes, holography, and the SYK model">
+      
+      
+      
+      
+        <link rel="prev" href="../extraction-spin-systems-as-quantum-simulators-of-quantum-field-theories-in-curve/">
+      
+      
+        <link rel="next" href="../extraction-traversable-wormhole-with-double-trace-deformations-via-gravitational/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Towards Quantum Simulation Of Black Holes In A Dc Squid Array - Blackhole Simulation Quantum Computing</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#extraction-towards-quantum-simulation-of-black-holes-in-a-dc-squid-array" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Blackhole Simulation Quantum Computing" class="md-header__button md-logo" aria-label="Blackhole Simulation Quantum Computing" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Blackhole Simulation Quantum Computing
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Towards Quantum Simulation Of Black Holes In A Dc Squid Array
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../extraction-a-bound-on-chaos/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Extractions
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../novelty/novelty-conjugate-control-requirement-for-recovery-beyond-forward-simulation/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Novelty
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../theories/dual-route-simulatability-metric-engineered-qft-vs-holographic-scrambler-emulati/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Theories
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../schemas/extraction-schema/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Schema
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Blackhole Simulation Quantum Computing" class="md-nav__button md-logo" aria-label="Blackhole Simulation Quantum Computing" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Blackhole Simulation Quantum Computing
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Extractions
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Extractions
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../extraction-a-bound-on-chaos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    A Bound On Chaos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../extraction-analogue-hawking-radiation-and-quantum-soliton-evaporation-in-a-super/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Analogue Hawking Radiation And Quantum Soliton Evaporation In A Super
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../extraction-analogue-simulations-of-quantum-gravity-with-fluids/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Analogue Simulations Of Quantum Gravity With Fluids
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../extraction-black-hole-on-a-chip-proposal-for-a-physical-realization-of-the-sachd/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Black Hole On A Chip Proposal For A Physical Realization Of The Sachd
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../extraction-black-hole-signatures-in-the-finite-temperature-critical-ising-chain/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Black Hole Signatures In The Finite Temperature Critical Ising Chain
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../extraction-black-holes-complementarity-or-firewalls/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Black Holes Complementarity Or Firewalls
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../extraction-commuting-syk-a-pseudo-holographic-model/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Commuting Syk A Pseudo Holographic Model
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../extraction-cool-horizons-for-entangled-black-holes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cool Horizons For Entangled Black Holes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../extraction-creating-and-probing-the-sachdev-ye-kitaev-model-with-ultracold-gases-1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Creating And Probing The Sachdev Ye Kitaev Model With Ultracold Gases 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../extraction-creating-and-probing-the-sachdev-ye-kitaev-model-with-ultracold-gases/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Creating And Probing The Sachdev Ye Kitaev Model With Ultracold Gases
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../extraction-digital-quantum-simulation-of-minimal-adscft-1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Digital Quantum Simulation Of Minimal Adscft 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../extraction-digital-quantum-simulation-of-minimal-adscft/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Digital Quantum Simulation Of Minimal Adscft
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../extraction-dirac-equation-in-11-dimensional-curved-spacetime-and-the-multiphoton/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dirac Equation In 11 Dimensional Curved Spacetime And The Multiphoton
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../extraction-dirac-equation-in-2-dimensional-curved-spacetime-particle-creation-an/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dirac Equation In 2 Dimensional Curved Spacetime Particle Creation An
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../extraction-dirac-fast-scramblers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dirac Fast Scramblers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../extraction-editorial-new-frontiers-in-holographic-duality/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Editorial New Frontiers In Holographic Duality
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../extraction-efficient-decoding-for-the-hayden-preskill-protocol/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Efficient Decoding For The Hayden Preskill Protocol
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../extraction-einstein-rosen-bridge-from-the-minimal-length/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Einstein Rosen Bridge From The Minimal Length
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../extraction-entanglement-wedge-reconstruction-and-the-information-paradox/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Entanglement Wedge Reconstruction And The Information Paradox
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../extraction-escape-of-quantum-information-across-an-analogue-black-hole-horizon/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Escape Of Quantum Information Across An Analogue Black Hole Horizon
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../extraction-gravitational-wave-induced-scrambling-delay-in-syk-wormhole-teleporta/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Gravitational Wave Induced Scrambling Delay In Syk Wormhole Teleporta
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../extraction-hawking-page-transition-on-a-spin-chain/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hawking Page Transition On A Spin Chain
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../extraction-how-to-make-a-quantum-black-hole-with-ultra-cold-gases/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    How To Make A Quantum Black Hole With Ultra Cold Gases
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../extraction-information-retrieval-from-hawking-radiation-in-the-non-isometric-mod/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Information Retrieval From Hawking Radiation In The Non Isometric Mod
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../extraction-mapping-curved-spacetimes-into-dirac-spinors/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mapping Curved Spacetimes Into Dirac Spinors
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../extraction-matters-of-gravity-the-newsletter-of-the-division-of-gravitational-ph/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Matters Of Gravity The Newsletter Of The Division Of Gravitational Ph
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../extraction-measuring-the-scrambling-of-quantum-information/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Measuring The Scrambling Of Quantum Information
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../extraction-mimicking-black-hole-event-horizons-in-atomic-and-solid-state-systems/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mimicking Black Hole Event Horizons In Atomic And Solid State Systems
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../extraction-models-for-unitary-black-hole-disintegration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Models For Unitary Black Hole Disintegration
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../extraction-observation-of-quantum-hawking-radiation-and-its-entanglement-in-an-a/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Observation Of Quantum Hawking Radiation And Its Entanglement In An A
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../extraction-quantum-field-simulator-for-dynamics-in-curved-spacetime/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quantum Field Simulator For Dynamics In Curved Spacetime
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../extraction-quantum-holography-in-a-graphene-flake-with-an-irregular-boundary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quantum Holography In A Graphene Flake With An Irregular Boundary
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../extraction-quantum-information-scrambling-from-holography-to-quantum-simulators/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quantum Information Scrambling From Holography To Quantum Simulators
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../extraction-quantum-simulation-of-hawking-radiation-and-curved-spacetime-with-a-s/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quantum Simulation Of Hawking Radiation And Curved Spacetime With A S
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../extraction-quantum-simulation-of-hawking-radiation-using-vqe-algorithm-on-ibm-qu/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quantum Simulation Of Hawking Radiation Using Vqe Algorithm On Ibm Qu
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../extraction-quantum-simulation-of-the-sachdev-ye-kitaev-model-by-asymmetric-qubit/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quantum Simulation Of The Sachdev Ye Kitaev Model By Asymmetric Qubit
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../extraction-quantum-simulation-of-traversable-wormhole-inspired-quantum-teleporta/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quantum Simulation Of Traversable Wormhole Inspired Quantum Teleporta
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../extraction-quantum-simulation-of-traversable-wormhole-spacetimes-in-a-bose-einst/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quantum Simulation Of Traversable Wormhole Spacetimes In A Bose Einst
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../extraction-quantum-simulation-of-unruh-radiation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quantum Simulation Of Unruh Radiation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../extraction-quantum-simulation-with-hybrid-tensor-networks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quantum Simulation With Hybrid Tensor Networks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../extraction-qubit-models-of-black-hole-evaporation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Qubit Models Of Black Hole Evaporation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../extraction-replica-wormholes-and-the-black-hole-interior/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Replica Wormholes And The Black Hole Interior
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../extraction-sachdev-ye-kitaev-non-fermi-liquid-correlations-in-nanoscopic-quantum/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sachdev Ye Kitaev Non Fermi Liquid Correlations In Nanoscopic Quantum
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../extraction-simulating-quantum-field-theory-in-curved-spacetime-with-quantum-many/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Simulating Quantum Field Theory In Curved Spacetime With Quantum Many
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../extraction-simulation-of-the-massless-dirac-field-in-11d-curved-spacetime/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Simulation Of The Massless Dirac Field In 11d Curved Spacetime
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../extraction-snowmass-white-paper-quantum-aspects-of-black-holes-and-the-emergence/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Snowmass White Paper Quantum Aspects Of Black Holes And The Emergence
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../extraction-spin-systems-as-quantum-simulators-of-quantum-field-theories-in-curve/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Spin Systems As Quantum Simulators Of Quantum Field Theories In Curve
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Towards Quantum Simulation Of Black Holes In A Dc Squid Array
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Towards Quantum Simulation Of Black Holes In A Dc Squid Array
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#quantum-simulation-of-11d-radial-black-hole-sections-using-a-dc-squid-array-embedded-in-an-open-transmission-line" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Quantum simulation of 1+1D radial black-hole sections using a dc-SQUID array embedded in an open transmission line
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#analogue-hawking-radiation-in-a-dc-squid-array-transmission-line-nation-blencowe-rimberg-buks-2009" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Analogue Hawking Radiation in a dc-SQUID Array Transmission Line (Nation, Blencowe, Rimberg, Buks, 2009)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#one-dimensional-sections-of-exotic-spacetimes-with-superconducting-circuits-sabin-new-j-phys-2018" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        One-dimensional sections of exotic spacetimes with superconducting circuits (Sabín, New J. Phys. 2018)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#citation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Citation
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../extraction-traversable-wormhole-with-double-trace-deformations-via-gravitational/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Traversable Wormhole With Double Trace Deformations Via Gravitational
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../extraction-traversable-wormholes-as-quantum-channels-exploring-cft-entanglement/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Traversable Wormholes As Quantum Channels Exploring Cft Entanglement
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../extraction-traversable-wormholes-via-a-double-trace-deformation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Traversable Wormholes Via A Double Trace Deformation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../extraction-tunneling-to-holographic-traversable-wormholes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tunneling To Holographic Traversable Wormholes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../extraction-variational-preparation-of-the-sachdev-ye-kitaev-thermofield-double/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Variational Preparation Of The Sachdev Ye Kitaev Thermofield Double
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../extraction-wormholes-and-holography-an-introduction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wormholes And Holography An Introduction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Novelty
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Novelty
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../novelty/novelty-conjugate-control-requirement-for-recovery-beyond-forward-simulation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Conjugate Control Requirement For Recovery Beyond Forward Simulation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../novelty/novelty-diagnosticdynamics-hierarchy-chaos-is-easier-than-semiclassical-bulk-emu/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Diagnosticdynamics Hierarchy Chaos Is Easier Than Semiclassical Bulk Emu
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../novelty/novelty-feasibility-boundary-kinematic-vs-interior-reconstruction-tasks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Feasibility Boundary Kinematic Vs Interior Reconstruction Tasks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../novelty/novelty-finite-size-ir-cutoff-and-reflection-law-for-breakdown-of-apparent-therm/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Finite Size Ir Cutoff And Reflection Law For Breakdown Of Apparent Therm
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../novelty/novelty-holographic-information-simulations-require-many-body-entanglement-and-s/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Holographic Information Simulations Require Many Body Entanglement And S
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../novelty/novelty-kinematic-horizon-simulations-require-metric-engineering-not-decoding-pr/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Kinematic Horizon Simulations Require Metric Engineering Not Decoding Pr
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../novelty/novelty-mechanism-certification-criterion-coherent-size-winding-is-a-discriminan/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mechanism Certification Criterion Coherent Size Winding Is A Discriminan
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../novelty/novelty-mechanism-dependent-noise-fragility-phase-coherent-size-winding-degrades/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mechanism Dependent Noise Fragility Phase Coherent Size Winding Degrades
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../novelty/novelty-observable-first-criterion-for-black-hole-simulation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Observable First Criterion For Black Hole Simulation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../novelty/novelty-route-separation-law-kinematic-vs-holographic-information/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Route Separation Law Kinematic Vs Holographic Information
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../novelty/novelty-validation-by-universality-windows/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Validation By Universality Windows
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Theories
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Theories
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../theories/dual-route-simulatability-metric-engineered-qft-vs-holographic-scrambler-emulati/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dual Route Simulatability Metric Engineered Qft Vs Holographic Scrambler Emulati
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../theories/dual-track-black-hole-simulation-principle-kinematic-horizons-vs-holographic-inf/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dual Track Black Hole Simulation Principle Kinematic Horizons Vs Holographic Inf
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../theories/horizon-encoded-hopping-universality-for-hawking-like-thermality/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Horizon Encoded Hopping Universality For Hawking Like Thermality
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../theories/operational-equivalence-classes-for-quantum-black-hole-simulation-revised/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Operational Equivalence Classes For Quantum Black Hole Simulation Revised
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../theories/operator-size-phase-coherence-as-the-mechanism-for-wormhole-teleportation-signal/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Operator Size Phase Coherence As The Mechanism For Wormhole Teleportation Signal
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../theories/scrambling-limited-simulatability-of-black-hole-information-tasks-revised/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Scrambling Limited Simulatability Of Black Hole Information Tasks Revised
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../schemas/extraction-schema/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Schema
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#quantum-simulation-of-11d-radial-black-hole-sections-using-a-dc-squid-array-embedded-in-an-open-transmission-line" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Quantum simulation of 1+1D radial black-hole sections using a dc-SQUID array embedded in an open transmission line
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#analogue-hawking-radiation-in-a-dc-squid-array-transmission-line-nation-blencowe-rimberg-buks-2009" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Analogue Hawking Radiation in a dc-SQUID Array Transmission Line (Nation, Blencowe, Rimberg, Buks, 2009)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#one-dimensional-sections-of-exotic-spacetimes-with-superconducting-circuits-sabin-new-j-phys-2018" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        One-dimensional sections of exotic spacetimes with superconducting circuits (Sabín, New J. Phys. 2018)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#citation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Citation
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<p><a href="../../">&lt;- All artifacts</a></p>
+<h1 id="extraction-towards-quantum-simulation-of-black-holes-in-a-dc-squid-array">Extraction: Towards Quantum Simulation of Black Holes in a dc-SQUID Array<a class="headerlink" href="#extraction-towards-quantum-simulation-of-black-holes-in-a-dc-squid-array" title="Permanent link">&para;</a></h1>
+<p><strong>Contents:</strong></p>
+<ul>
+<li>Quantum simulation of 1+1D radial black-hole sections using a dc-SQUID array embedded in an open transmission line</li>
+<li>Analogue Hawking Radiation in a dc-SQUID Array Transmission Line (Nation, Blencowe, Rimberg, Buks, 2009)</li>
+<li>One-dimensional sections of exotic spacetimes with superconducting circuits (Sabín, New J. Phys. 2018)</li>
+</ul>
+<h3 id="quantum-simulation-of-11d-radial-black-hole-sections-using-a-dc-squid-array-embedded-in-an-open-transmission-line">Quantum simulation of 1+1D radial black-hole sections using a dc-SQUID array embedded in an open transmission line<a class="headerlink" href="#quantum-simulation-of-11d-radial-black-hole-sections-using-a-dc-squid-array-embedded-in-an-open-transmission-line" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>name_short</td>
+<td>dc-SQUID array BH sim</td>
+</tr>
+<tr>
+<td>name_full</td>
+<td>Quantum simulation of 1+1D radial black-hole sections using a dc-SQUID array embedded in an open transmission line</td>
+</tr>
+<tr>
+<td>brief_description</td>
+<td>A proposal to simulate 1+1D radial sections of Schwarzschild, Reissner–Nordström, Kerr and Kerr–Newman spacetimes by engineering a spatially- and temporally-dependent effective propagation speed for the electromagnetic field in a dc-SQUID transmission-line array via an external magnetic flux profile; event horizons map to locations where the effective speed vanishes and Hawking-like photon pair emission can be probed.</td>
+</tr>
+<tr>
+<td>citation_title</td>
+<td>here</td>
+</tr>
+<tr>
+<td>mention_or_use</td>
+<td>use</td>
+</tr>
+<tr>
+<td>target_system_or_model</td>
+<td>Quantum field theory in curved spacetime (1+1D radial sections of Kerr–Newman family: Schwarzschild, Reissner–Nordström, Kerr, Kerr–Newman)</td>
+</tr>
+<tr>
+<td>black_hole_phenomena_targeted</td>
+<td>Event-horizon formation analogues and potential Hawking radiation (photon-pair emission from vacuum), plus study of ergosphere appearance/limitations in rotating cases</td>
+</tr>
+<tr>
+<td>simulation_paradigm</td>
+<td>Analog quantum simulation (continuous-variable electromagnetic field in a superconducting transmission line with engineered local wave speed)</td>
+</tr>
+<tr>
+<td>quantum_hardware_platform</td>
+<td>Superconducting circuits — dc-SQUID array embedded on an open microwave transmission line (Josephson-junction based metamaterial)</td>
+</tr>
+<tr>
+<td>encoding_and_mapping</td>
+<td>The mapping uses the conformal invariance of the 1+1D Klein–Gordon equation to identify the 1+1D section of the black-hole metric with a wave equation having a position-dependent effective light speed c(x,t). The effective local squared speed c^2 is implemented by tuning the SQUID inductance with an external magnetic flux via c^2(phi_ext)=c0^2</td>
+</tr>
+<tr>
+<td>algorithm_or_protocol</td>
+<td>Analog protocol: set a DC bias flux to reduce global effective speed, then apply the spatial (and in general temporal) flux profile phi_ext(ξ,t) (via Eq. 9) to reproduce the target dot{c}^2(ξ). Detection protocol: measure correlated photon pairs emitted from the array endpoints using coincidence detection to identify Hawking-like pair creation (citing DCE and previous proposals). No gate-based algorithmic steps are used; the physics is enacted by continuous control of circuit parameters.</td>
+</tr>
+<tr>
+<td>resource_estimates</td>
+<td>No explicit qubit/gate resource counts or circuit-depth estimates are provided. Experimental-resource-level guidance: keep the region near critical flux (pi phi_ext/phi0 = pi/2) as small as possible (ideally a single SQUID) to avoid collective high impedance and phase-fluctuation-driven breakdown; choose large effective black-hole mass M (scales radial compression) to minimize the number of SQUIDs in the critical region. No counts of SQUIDs, detectors, or measurement shots are specified.</td>
+</tr>
+<tr>
+<td>noise_and_error_mitigation</td>
+<td>Noise discussion is qualitative: main limitation arises from quantum phase fluctuations (ψ) and large array impedance when many SQUIDs approach the critical flux, breaking the cos ψ ≈ 1 linear approximation and potentially driving the array out of the superconducting regime. Mitigation proposed qualitatively: restrict high-flux region to as few SQUIDs as possible (single SQUID ideal) and operate in weak-signal linear regime. No quantitative noise model, error budgets, or explicit mitigation techniques (ZNE, PEC, postselection) are given.</td>
+</tr>
+<tr>
+<td>key_results_or_demonstrations</td>
+<td>This work is a theoretical proposal/analysis (no experimental realization reported). Core findings: explicit analytic expressions to convert 1+1D radial metric sections of Schwarzschild, Reissner–Nordström, Kerr and Kerr–Newman black holes into required external flux profiles (Eqs. 22, 23, 26, 30, 38, 41, 42); demonstration that event-horizon analogues (locations where effective c^2→0) can in principle be produced for non-rotating black holes; identification that Hawking-like photon-pair emission could be observed via coincidence detection if horizons are realized; demonstration that ergospheres (regions where radial-wave propagation is forbidden / effective c^2 would have to be negative/imaginary) cannot be properly simulated with these radial sections because they require flux beyond the allowed linear regime.</td>
+</tr>
+<tr>
+<td>validation_and_benchmarks</td>
+<td>Validation is analytical: mapping is constructed by conformal transformation of the 1+1D Klein–Gordon equation and direct algebraic matching of metric coefficients to effective wave-speed profiles; comparison to known analytic positions of horizons and static limits (Eqs. 16–19,17,19) to identify where phi_ext reaches threshold π/2. No numerical simulations, no experimental data, and no explicit comparison to full-wave electromagnetic simulations are presented; experimental validation is proposed via coincidence photon detection to discriminate Hawking-like pairs from thermal noise.</td>
+</tr>
+<tr>
+<td>claimed_feasibility</td>
+<td>Feasibility claims are cautious: generating event-horizon analogues and possibly Hawking radiation is, in principle, achievable for non-rotating black holes within this platform, but experimental verification is required. The ergosphere (rotating BH) simulation appears beyond reach for the considered radial sections because it requires flux beyond the linear regime. Practical bottlenecks identified: quantum-phase fluctuations and high impedance near critical flux, nonlinearity breakdown (cos ψ ≈ 1 invalid), and the discrete nature of the array requiring horizons be localized to very few SQUIDs. The paper suggests that experiments should choose large M to compress critical regions and minimize problematic SQUIDs.</td>
+</tr>
+<tr>
+<td>limitations_and_open_problems</td>
+<td>Explicit limitations: (1) Linear weak-signal approximation (cos ψ ≈ 1) may fail near critical flux; (2) quantum phase fluctuations/high-impedance of an extended critical region can drive insulating behavior preventing horizon formation; (3) discrete SQUID array cannot perfectly reproduce a continuum metric—event horizon is at best one or a few SQUIDs; (4) ergospheres (frame-dragging regions) require regions where the simulated radial c^2 becomes negative/imaginary or flux beyond π/2, which is outside allowed operating regime, so ergosphere physics cannot be captured with the considered radial sections; (5) charged black holes produce regions not simulable for small r (flux undefined or discontinuous depending on A); (6) no assessment of spectral shape/temperature of Hawking radiation beyond qualitative expectation; (7) no resource quantification (numbers of devices/detectors) or full noise modeling.</td>
+</tr>
+<tr>
+<td>complexity_or_hardness_arguments</td>
+<td>No complexity-theoretic claims are made (no statements about BQP/QMA hardness or classical intractability).</td>
+</tr>
+<tr>
+<td>theory_context_keywords</td>
+<td>quantum field theory in curved spacetime, analogue gravity, event horizon analogue, Hawking radiation, dynamical Casimir effect, conformal invariance of Klein–Gordon, SQUID metamaterial, frame dragging, ergosphere</td>
+</tr>
+<tr>
+<td>citations_to_prior_work</td>
+<td>Key prior works cited and used as basis: Sabín 'One-dimensional sections of exotic spacetimes with superconducting circuits' (New J. Phys. 2018) [15] (procedure followed); Nation et al. 'Analogue Hawking Radiation in a dc-SQUID Array Transmission Line' (Phys. Rev. Lett. 2009) [18] (prior theoretical proposal); Nation et al. 'Stimulating uncertainty: Amplifying the quantum vacuum with superconducting circuits' (Rev. Mod. Phys. 2012) [17] (review of related effects and photon-pair generation); Lähteenmäki et al. 'Dynamical Casimir effect in a Josephson metamaterial' (PNAS 2013) [19] (experimental DCE in Josephson metamaterial); Steinhauer 'Observation of quantum Hawking radiation and its entanglement in an analogue black hole' (Nat. Phys. 2016) [16] (BEC experiment detecting Hawking radiation); and foundational JJ/SQUID works and studies of phase fluctuations and insulator transition [20–22,24–26].</td>
+</tr>
+</tbody>
+</table>
+<h3 id="analogue-hawking-radiation-in-a-dc-squid-array-transmission-line-nation-blencowe-rimberg-buks-2009">Analogue Hawking Radiation in a dc-SQUID Array Transmission Line (Nation, Blencowe, Rimberg, Buks, 2009)<a class="headerlink" href="#analogue-hawking-radiation-in-a-dc-squid-array-transmission-line-nation-blencowe-rimberg-buks-2009" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>name_short</td>
+<td>Nation et al. PRL 2009</td>
+</tr>
+<tr>
+<td>name_full</td>
+<td>Analogue Hawking Radiation in a dc-SQUID Array Transmission Line (Nation, Blencowe, Rimberg, Buks, 2009)</td>
+</tr>
+<tr>
+<td>brief_description</td>
+<td>A prior theoretical proposal to generate analogue Hawking radiation by engineering horizons in a dc-SQUID transmission-line metamaterial through modulation of the local wave propagation speed using SQUID inductances.</td>
+</tr>
+<tr>
+<td>citation_title</td>
+<td>Analogue Hawking Radiation in a dc-SQUID Array Transmission Line</td>
+</tr>
+<tr>
+<td>mention_or_use</td>
+<td>mention</td>
+</tr>
+<tr>
+<td>target_system_or_model</td>
+<td>Analogue quantum field theory in curved spacetime using SQUID-array transmission line</td>
+</tr>
+<tr>
+<td>black_hole_phenomena_targeted</td>
+<td>Analogue event horizons and Hawking radiation (photon pair creation)</td>
+</tr>
+<tr>
+<td>simulation_paradigm</td>
+<td>Analog quantum simulation (microwave SQUID metamaterial)</td>
+</tr>
+<tr>
+<td>quantum_hardware_platform</td>
+<td>Superconducting circuits (dc-SQUID arrays)</td>
+</tr>
+<tr>
+<td>encoding_and_mapping</td>
+<td>Map target effective metric to spatially-dependent propagation speed via SQUID inductance controlled by magnetic flux (c^2(phi_ext) relationship cited in main paper).</td>
+</tr>
+<tr>
+<td>algorithm_or_protocol</td>
+<td>Continuous control of external flux to create horizon-like region; detection via emitted photons (DCE-like signatures).</td>
+</tr>
+<tr>
+<td>resource_estimates</td>
+<td>Not given in the citing paper (referenced here only as prior proposal).</td>
+</tr>
+<tr>
+<td>noise_and_error_mitigation</td>
+<td>Not detailed in this paper's discussion beyond qualitative references; main paper references it as theoretical prior work.</td>
+</tr>
+<tr>
+<td>key_results_or_demonstrations</td>
+<td>Cited as foundational theoretical proposal motivating the present work; no experimental realization reported here.</td>
+</tr>
+<tr>
+<td>validation_and_benchmarks</td>
+<td>Analytic theoretical derivation in original proposal (not reproduced numerically here).</td>
+</tr>
+<tr>
+<td>claimed_feasibility</td>
+<td>Presented as a feasible theoretical approach in prior literature; cited here as motivation/basis.</td>
+</tr>
+<tr>
+<td>limitations_and_open_problems</td>
+<td>Original limitations (as referenced): need to control flux precisely, manage phase fluctuations, and address nonlinear regime near critical flux—these are discussed in the present paper.</td>
+</tr>
+<tr>
+<td>complexity_or_hardness_arguments</td>
+<td>None stated in the present paper's citation context.</td>
+</tr>
+<tr>
+<td>theory_context_keywords</td>
+<td>analogue Hawking radiation, SQUID metamaterial, dynamical Casimir</td>
+</tr>
+<tr>
+<td>citations_to_prior_work</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="one-dimensional-sections-of-exotic-spacetimes-with-superconducting-circuits-sabin-new-j-phys-2018">One-dimensional sections of exotic spacetimes with superconducting circuits (Sabín, New J. Phys. 2018)<a class="headerlink" href="#one-dimensional-sections-of-exotic-spacetimes-with-superconducting-circuits-sabin-new-j-phys-2018" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>name_short</td>
+<td>Sabín 2018 procedure</td>
+</tr>
+<tr>
+<td>name_full</td>
+<td>One-dimensional sections of exotic spacetimes with superconducting circuits (Sabín, New J. Phys. 2018)</td>
+</tr>
+<tr>
+<td>brief_description</td>
+<td>A methodology to simulate 1+1D sections of exotic spacetimes using superconducting-circuit transmission lines (dc-SQUID arrays) by mapping spacetime metric coefficients to local propagation speeds; the present paper follows this procedure.</td>
+</tr>
+<tr>
+<td>citation_title</td>
+<td>One-dimensional sections of exotic spacetimes with superconducting circuits</td>
+</tr>
+<tr>
+<td>mention_or_use</td>
+<td>mention</td>
+</tr>
+<tr>
+<td>target_system_or_model</td>
+<td>1+1D sections of curved spacetimes (analogue gravity) implemented in SQUID arrays</td>
+</tr>
+<tr>
+<td>black_hole_phenomena_targeted</td>
+<td>General exotic-spacetime features in 1+1D sections (used as methodological basis for BH sections in present work)</td>
+</tr>
+<tr>
+<td>simulation_paradigm</td>
+<td>Analog quantum simulation</td>
+</tr>
+<tr>
+<td>quantum_hardware_platform</td>
+<td>Superconducting circuits (dc-SQUID arrays)</td>
+</tr>
+<tr>
+<td>encoding_and_mapping</td>
+<td>Conformal mapping of 1+1D Klein–Gordon to engineered position-dependent wave speed implemented via flux control of SQUID inductance (approach used here).</td>
+</tr>
+<tr>
+<td>algorithm_or_protocol</td>
+<td>Design flux profiles from metric coefficients; implement via DC+AC flux control in transmission line; analyze resulting effective c^2(ξ).</td>
+</tr>
+<tr>
+<td>resource_estimates</td>
+<td>Not specified in present paper beyond the same qualitative guidance (minimize SQUIDs near critical flux).</td>
+</tr>
+<tr>
+<td>noise_and_error_mitigation</td>
+<td>Original procedure works in linear regime and flags nonlinear breakdowns near critical flux; present paper inherits those cautions.</td>
+</tr>
+<tr>
+<td>key_results_or_demonstrations</td>
+<td>Procedure provided analytical mapping for 1+1D spacetime sections; present paper applies it to Kerr–Newman family.</td>
+</tr>
+<tr>
+<td>validation_and_benchmarks</td>
+<td>Analytical construction and examples in prior work; present paper builds upon it.</td>
+</tr>
+<tr>
+<td>claimed_feasibility</td>
+<td>Proposed as feasible in principle within linear-operating SQUID arrays; practical issues remain (phase fluctuations, impedance).</td>
+</tr>
+<tr>
+<td>limitations_and_open_problems</td>
+<td>Same platform limitations: phase fluctuations, limited to sections where mapping yields physically-allowed fluxes inside linear regime.</td>
+</tr>
+<tr>
+<td>complexity_or_hardness_arguments</td>
+<td>None.</td>
+</tr>
+<tr>
+<td>theory_context_keywords</td>
+<td>conformal mapping, Klein–Gordon, SQUID array, analogue spacetimes</td>
+</tr>
+<tr>
+<td>citations_to_prior_work</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="citation">Citation<a class="headerlink" href="#citation" title="Permanent link">&para;</a></h2>
+<p>Cite this artifact as <code>\cite{ast-ext-terrones-2026-08-13}</code>.
+[code] 
+    @misc{ast-ext-terrones-2026-08-13,
+      title        = {Extraction: Towards Quantum Simulation of Black Holes in a dc-SQUID Array},
+      author       = {{Asta Theorizer}},
+      year         = {2026},
+      howpublished = {Asta Theorizer evidence extraction},
+      url          = {extractions/extraction-towards-quantum-simulation-of-black-holes-in-a-dc-squid-array.md},
+      crossref     = {terrones2021towards},
+      note         = {Theorizer's extraction from \cite{terrones2021towards}. asta-artifact id: extraction-result-67},
+    }</p>
+<div class="highlight"><pre><span></span><code>@article{terrones2021towards,
+  title     = {Towards Quantum Simulation of Black Holes in a dc-SQUID Array},
+  author    = {Adri&#39;an Terrones and C. Sab&#39;in},
+  year      = {2021},
+  journal   = {Universe},
+  url       = {https://www.semanticscholar.org/paper/239616504},
+}
+</code></pre></div>
+<p>[/code]</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026 Mir Sakhawat Hossain
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.top", "navigation.indexes", "toc.follow", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

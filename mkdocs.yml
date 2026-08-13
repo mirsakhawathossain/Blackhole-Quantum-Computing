@@ -1,0 +1,141 @@
+site_name: Blackhole Simulation Quantum Computing
+site_description: A research knowledge base on quantum simulation of black holes, holography, and the SYK model
+docs_dir: "Blackhole Simulation Quantum Computing"
+copyright: Copyright &copy; 2026 Mir Sakhawat Hossain
+
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.top
+    - navigation.indexes
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+  icon:
+    repo: fontawesome/brands/github
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.arithmatex:
+      generic: true
+  - footnotes
+  - tables
+
+extra_javascript:
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+
+plugins:
+  - search:
+      lang: en
+      separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])'
+  - bibtex:
+      bib_file: "Blackhole Simulation Quantum Computing/citations.bib"
+
+nav:
+  - Home: index.md
+  - Extractions:
+          - A Bound On Chaos: extractions/extraction-a-bound-on-chaos.md
+          - Analogue Hawking Radiation And Quantum Soliton Evaporation In A Super: extractions/extraction-analogue-hawking-radiation-and-quantum-soliton-evaporation-in-a-super.md
+          - Analogue Simulations Of Quantum Gravity With Fluids: extractions/extraction-analogue-simulations-of-quantum-gravity-with-fluids.md
+          - Black Hole On A Chip Proposal For A Physical Realization Of The Sachd: extractions/extraction-black-hole-on-a-chip-proposal-for-a-physical-realization-of-the-sachd.md
+          - Black Hole Signatures In The Finite Temperature Critical Ising Chain: extractions/extraction-black-hole-signatures-in-the-finite-temperature-critical-ising-chain.md
+          - Black Holes Complementarity Or Firewalls: extractions/extraction-black-holes-complementarity-or-firewalls.md
+          - Commuting Syk A Pseudo Holographic Model: extractions/extraction-commuting-syk-a-pseudo-holographic-model.md
+          - Cool Horizons For Entangled Black Holes: extractions/extraction-cool-horizons-for-entangled-black-holes.md
+          - Creating And Probing The Sachdev Ye Kitaev Model With Ultracold Gases 1: extractions/extraction-creating-and-probing-the-sachdev-ye-kitaev-model-with-ultracold-gases-1.md
+          - Creating And Probing The Sachdev Ye Kitaev Model With Ultracold Gases: extractions/extraction-creating-and-probing-the-sachdev-ye-kitaev-model-with-ultracold-gases.md
+          - Digital Quantum Simulation Of Minimal Adscft 1: extractions/extraction-digital-quantum-simulation-of-minimal-adscft-1.md
+          - Digital Quantum Simulation Of Minimal Adscft: extractions/extraction-digital-quantum-simulation-of-minimal-adscft.md
+          - Dirac Equation In 11 Dimensional Curved Spacetime And The Multiphoton: extractions/extraction-dirac-equation-in-11-dimensional-curved-spacetime-and-the-multiphoton.md
+          - Dirac Equation In 2 Dimensional Curved Spacetime Particle Creation An: extractions/extraction-dirac-equation-in-2-dimensional-curved-spacetime-particle-creation-an.md
+          - Dirac Fast Scramblers: extractions/extraction-dirac-fast-scramblers.md
+          - Editorial New Frontiers In Holographic Duality: extractions/extraction-editorial-new-frontiers-in-holographic-duality.md
+          - Efficient Decoding For The Hayden Preskill Protocol: extractions/extraction-efficient-decoding-for-the-hayden-preskill-protocol.md
+          - Einstein Rosen Bridge From The Minimal Length: extractions/extraction-einstein-rosen-bridge-from-the-minimal-length.md
+          - Entanglement Wedge Reconstruction And The Information Paradox: extractions/extraction-entanglement-wedge-reconstruction-and-the-information-paradox.md
+          - Escape Of Quantum Information Across An Analogue Black Hole Horizon: extractions/extraction-escape-of-quantum-information-across-an-analogue-black-hole-horizon.md
+          - Gravitational Wave Induced Scrambling Delay In Syk Wormhole Teleporta: extractions/extraction-gravitational-wave-induced-scrambling-delay-in-syk-wormhole-teleporta.md
+          - Hawking Page Transition On A Spin Chain: extractions/extraction-hawking-page-transition-on-a-spin-chain.md
+          - How To Make A Quantum Black Hole With Ultra Cold Gases: extractions/extraction-how-to-make-a-quantum-black-hole-with-ultra-cold-gases.md
+          - Information Retrieval From Hawking Radiation In The Non Isometric Mod: extractions/extraction-information-retrieval-from-hawking-radiation-in-the-non-isometric-mod.md
+          - Mapping Curved Spacetimes Into Dirac Spinors: extractions/extraction-mapping-curved-spacetimes-into-dirac-spinors.md
+          - Matters Of Gravity The Newsletter Of The Division Of Gravitational Ph: extractions/extraction-matters-of-gravity-the-newsletter-of-the-division-of-gravitational-ph.md
+          - Measuring The Scrambling Of Quantum Information: extractions/extraction-measuring-the-scrambling-of-quantum-information.md
+          - Mimicking Black Hole Event Horizons In Atomic And Solid State Systems: extractions/extraction-mimicking-black-hole-event-horizons-in-atomic-and-solid-state-systems.md
+          - Models For Unitary Black Hole Disintegration: extractions/extraction-models-for-unitary-black-hole-disintegration.md
+          - Observation Of Quantum Hawking Radiation And Its Entanglement In An A: extractions/extraction-observation-of-quantum-hawking-radiation-and-its-entanglement-in-an-a.md
+          - Quantum Field Simulator For Dynamics In Curved Spacetime: extractions/extraction-quantum-field-simulator-for-dynamics-in-curved-spacetime.md
+          - Quantum Holography In A Graphene Flake With An Irregular Boundary: extractions/extraction-quantum-holography-in-a-graphene-flake-with-an-irregular-boundary.md
+          - Quantum Information Scrambling From Holography To Quantum Simulators: extractions/extraction-quantum-information-scrambling-from-holography-to-quantum-simulators.md
+          - Quantum Simulation Of Hawking Radiation And Curved Spacetime With A S: extractions/extraction-quantum-simulation-of-hawking-radiation-and-curved-spacetime-with-a-s.md
+          - Quantum Simulation Of Hawking Radiation Using Vqe Algorithm On Ibm Qu: extractions/extraction-quantum-simulation-of-hawking-radiation-using-vqe-algorithm-on-ibm-qu.md
+          - Quantum Simulation Of The Sachdev Ye Kitaev Model By Asymmetric Qubit: extractions/extraction-quantum-simulation-of-the-sachdev-ye-kitaev-model-by-asymmetric-qubit.md
+          - Quantum Simulation Of Traversable Wormhole Inspired Quantum Teleporta: extractions/extraction-quantum-simulation-of-traversable-wormhole-inspired-quantum-teleporta.md
+          - Quantum Simulation Of Traversable Wormhole Spacetimes In A Bose Einst: extractions/extraction-quantum-simulation-of-traversable-wormhole-spacetimes-in-a-bose-einst.md
+          - Quantum Simulation Of Unruh Radiation: extractions/extraction-quantum-simulation-of-unruh-radiation.md
+          - Quantum Simulation With Hybrid Tensor Networks: extractions/extraction-quantum-simulation-with-hybrid-tensor-networks.md
+          - Qubit Models Of Black Hole Evaporation: extractions/extraction-qubit-models-of-black-hole-evaporation.md
+          - Replica Wormholes And The Black Hole Interior: extractions/extraction-replica-wormholes-and-the-black-hole-interior.md
+          - Sachdev Ye Kitaev Non Fermi Liquid Correlations In Nanoscopic Quantum: extractions/extraction-sachdev-ye-kitaev-non-fermi-liquid-correlations-in-nanoscopic-quantum.md
+          - Simulating Quantum Field Theory In Curved Spacetime With Quantum Many: extractions/extraction-simulating-quantum-field-theory-in-curved-spacetime-with-quantum-many.md
+          - Simulation Of The Massless Dirac Field In 11d Curved Spacetime: extractions/extraction-simulation-of-the-massless-dirac-field-in-11d-curved-spacetime.md
+          - Snowmass White Paper Quantum Aspects Of Black Holes And The Emergence: extractions/extraction-snowmass-white-paper-quantum-aspects-of-black-holes-and-the-emergence.md
+          - Spin Systems As Quantum Simulators Of Quantum Field Theories In Curve: extractions/extraction-spin-systems-as-quantum-simulators-of-quantum-field-theories-in-curve.md
+          - Towards Quantum Simulation Of Black Holes In A Dc Squid Array: extractions/extraction-towards-quantum-simulation-of-black-holes-in-a-dc-squid-array.md
+          - Traversable Wormhole With Double Trace Deformations Via Gravitational: extractions/extraction-traversable-wormhole-with-double-trace-deformations-via-gravitational.md
+          - Traversable Wormholes As Quantum Channels Exploring Cft Entanglement: extractions/extraction-traversable-wormholes-as-quantum-channels-exploring-cft-entanglement.md
+          - Traversable Wormholes Via A Double Trace Deformation: extractions/extraction-traversable-wormholes-via-a-double-trace-deformation.md
+          - Tunneling To Holographic Traversable Wormholes: extractions/extraction-tunneling-to-holographic-traversable-wormholes.md
+          - Variational Preparation Of The Sachdev Ye Kitaev Thermofield Double: extractions/extraction-variational-preparation-of-the-sachdev-ye-kitaev-thermofield-double.md
+          - Wormholes And Holography An Introduction: extractions/extraction-wormholes-and-holography-an-introduction.md
+  - Novelty:
+          - Conjugate Control Requirement For Recovery Beyond Forward Simulation: novelty/novelty-conjugate-control-requirement-for-recovery-beyond-forward-simulation.md
+          - Diagnosticdynamics Hierarchy Chaos Is Easier Than Semiclassical Bulk Emu: novelty/novelty-diagnosticdynamics-hierarchy-chaos-is-easier-than-semiclassical-bulk-emu.md
+          - Feasibility Boundary Kinematic Vs Interior Reconstruction Tasks: novelty/novelty-feasibility-boundary-kinematic-vs-interior-reconstruction-tasks.md
+          - Finite Size Ir Cutoff And Reflection Law For Breakdown Of Apparent Therm: novelty/novelty-finite-size-ir-cutoff-and-reflection-law-for-breakdown-of-apparent-therm.md
+          - Holographic Information Simulations Require Many Body Entanglement And S: novelty/novelty-holographic-information-simulations-require-many-body-entanglement-and-s.md
+          - Kinematic Horizon Simulations Require Metric Engineering Not Decoding Pr: novelty/novelty-kinematic-horizon-simulations-require-metric-engineering-not-decoding-pr.md
+          - Mechanism Certification Criterion Coherent Size Winding Is A Discriminan: novelty/novelty-mechanism-certification-criterion-coherent-size-winding-is-a-discriminan.md
+          - Mechanism Dependent Noise Fragility Phase Coherent Size Winding Degrades: novelty/novelty-mechanism-dependent-noise-fragility-phase-coherent-size-winding-degrades.md
+          - Observable First Criterion For Black Hole Simulation: novelty/novelty-observable-first-criterion-for-black-hole-simulation.md
+          - Route Separation Law Kinematic Vs Holographic Information: novelty/novelty-route-separation-law-kinematic-vs-holographic-information.md
+          - Validation By Universality Windows: novelty/novelty-validation-by-universality-windows.md
+  - Theories:
+          - Dual Route Simulatability Metric Engineered Qft Vs Holographic Scrambler Emulati: theories/dual-route-simulatability-metric-engineered-qft-vs-holographic-scrambler-emulati.md
+          - Dual Track Black Hole Simulation Principle Kinematic Horizons Vs Holographic Inf: theories/dual-track-black-hole-simulation-principle-kinematic-horizons-vs-holographic-inf.md
+          - Horizon Encoded Hopping Universality For Hawking Like Thermality: theories/horizon-encoded-hopping-universality-for-hawking-like-thermality.md
+          - Operational Equivalence Classes For Quantum Black Hole Simulation Revised: theories/operational-equivalence-classes-for-quantum-black-hole-simulation-revised.md
+          - Operator Size Phase Coherence As The Mechanism For Wormhole Teleportation Signal: theories/operator-size-phase-coherence-as-the-mechanism-for-wormhole-teleportation-signal.md
+          - Scrambling Limited Simulatability Of Black Hole Information Tasks Revised: theories/scrambling-limited-simulatability-of-black-hole-information-tasks-revised.md
+  - Schema: schemas/extraction-schema.md

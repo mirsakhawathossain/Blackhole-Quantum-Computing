@@ -1,0 +1,3171 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="A research knowledge base on quantum simulation of black holes, holography, and the SYK model">
+      
+      
+      
+      
+      
+        <link rel="next" href="extractions/extraction-a-bound-on-chaos/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Blackhole Simulation Quantum Computing</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#artifacts" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="." title="Blackhole Simulation Quantum Computing" class="md-header__button md-logo" aria-label="Blackhole Simulation Quantum Computing" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Blackhole Simulation Quantum Computing
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Home
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="extractions/extraction-a-bound-on-chaos/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Extractions
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="novelty/novelty-conjugate-control-requirement-for-recovery-beyond-forward-simulation/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Novelty
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="theories/dual-route-simulatability-metric-engineered-qft-vs-holographic-scrambler-emulati/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Theories
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="schemas/extraction-schema/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Schema
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="Blackhole Simulation Quantum Computing" class="md-nav__button md-logo" aria-label="Blackhole Simulation Quantum Computing" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Blackhole Simulation Quantum Computing
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="." class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#bibliography" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bibliography
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#theories" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Theories
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#novelty" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Novelty
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#extractions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Extractions
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#schemas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schemas
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Data
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Extractions
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Extractions
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="extractions/extraction-a-bound-on-chaos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    A Bound On Chaos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="extractions/extraction-analogue-hawking-radiation-and-quantum-soliton-evaporation-in-a-super/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Analogue Hawking Radiation And Quantum Soliton Evaporation In A Super
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="extractions/extraction-analogue-simulations-of-quantum-gravity-with-fluids/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Analogue Simulations Of Quantum Gravity With Fluids
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="extractions/extraction-black-hole-on-a-chip-proposal-for-a-physical-realization-of-the-sachd/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Black Hole On A Chip Proposal For A Physical Realization Of The Sachd
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="extractions/extraction-black-hole-signatures-in-the-finite-temperature-critical-ising-chain/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Black Hole Signatures In The Finite Temperature Critical Ising Chain
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="extractions/extraction-black-holes-complementarity-or-firewalls/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Black Holes Complementarity Or Firewalls
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="extractions/extraction-commuting-syk-a-pseudo-holographic-model/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Commuting Syk A Pseudo Holographic Model
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="extractions/extraction-cool-horizons-for-entangled-black-holes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cool Horizons For Entangled Black Holes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="extractions/extraction-creating-and-probing-the-sachdev-ye-kitaev-model-with-ultracold-gases-1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Creating And Probing The Sachdev Ye Kitaev Model With Ultracold Gases 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="extractions/extraction-creating-and-probing-the-sachdev-ye-kitaev-model-with-ultracold-gases/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Creating And Probing The Sachdev Ye Kitaev Model With Ultracold Gases
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="extractions/extraction-digital-quantum-simulation-of-minimal-adscft-1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Digital Quantum Simulation Of Minimal Adscft 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="extractions/extraction-digital-quantum-simulation-of-minimal-adscft/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Digital Quantum Simulation Of Minimal Adscft
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="extractions/extraction-dirac-equation-in-11-dimensional-curved-spacetime-and-the-multiphoton/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dirac Equation In 11 Dimensional Curved Spacetime And The Multiphoton
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="extractions/extraction-dirac-equation-in-2-dimensional-curved-spacetime-particle-creation-an/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dirac Equation In 2 Dimensional Curved Spacetime Particle Creation An
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="extractions/extraction-dirac-fast-scramblers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dirac Fast Scramblers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="extractions/extraction-editorial-new-frontiers-in-holographic-duality/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Editorial New Frontiers In Holographic Duality
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="extractions/extraction-efficient-decoding-for-the-hayden-preskill-protocol/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Efficient Decoding For The Hayden Preskill Protocol
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="extractions/extraction-einstein-rosen-bridge-from-the-minimal-length/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Einstein Rosen Bridge From The Minimal Length
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="extractions/extraction-entanglement-wedge-reconstruction-and-the-information-paradox/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Entanglement Wedge Reconstruction And The Information Paradox
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="extractions/extraction-escape-of-quantum-information-across-an-analogue-black-hole-horizon/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Escape Of Quantum Information Across An Analogue Black Hole Horizon
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="extractions/extraction-gravitational-wave-induced-scrambling-delay-in-syk-wormhole-teleporta/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Gravitational Wave Induced Scrambling Delay In Syk Wormhole Teleporta
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="extractions/extraction-hawking-page-transition-on-a-spin-chain/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hawking Page Transition On A Spin Chain
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="extractions/extraction-how-to-make-a-quantum-black-hole-with-ultra-cold-gases/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    How To Make A Quantum Black Hole With Ultra Cold Gases
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="extractions/extraction-information-retrieval-from-hawking-radiation-in-the-non-isometric-mod/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Information Retrieval From Hawking Radiation In The Non Isometric Mod
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="extractions/extraction-mapping-curved-spacetimes-into-dirac-spinors/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mapping Curved Spacetimes Into Dirac Spinors
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="extractions/extraction-matters-of-gravity-the-newsletter-of-the-division-of-gravitational-ph/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Matters Of Gravity The Newsletter Of The Division Of Gravitational Ph
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="extractions/extraction-measuring-the-scrambling-of-quantum-information/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Measuring The Scrambling Of Quantum Information
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="extractions/extraction-mimicking-black-hole-event-horizons-in-atomic-and-solid-state-systems/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mimicking Black Hole Event Horizons In Atomic And Solid State Systems
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="extractions/extraction-models-for-unitary-black-hole-disintegration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Models For Unitary Black Hole Disintegration
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="extractions/extraction-observation-of-quantum-hawking-radiation-and-its-entanglement-in-an-a/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Observation Of Quantum Hawking Radiation And Its Entanglement In An A
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="extractions/extraction-quantum-field-simulator-for-dynamics-in-curved-spacetime/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quantum Field Simulator For Dynamics In Curved Spacetime
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="extractions/extraction-quantum-holography-in-a-graphene-flake-with-an-irregular-boundary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quantum Holography In A Graphene Flake With An Irregular Boundary
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="extractions/extraction-quantum-information-scrambling-from-holography-to-quantum-simulators/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quantum Information Scrambling From Holography To Quantum Simulators
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="extractions/extraction-quantum-simulation-of-hawking-radiation-and-curved-spacetime-with-a-s/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quantum Simulation Of Hawking Radiation And Curved Spacetime With A S
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="extractions/extraction-quantum-simulation-of-hawking-radiation-using-vqe-algorithm-on-ibm-qu/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quantum Simulation Of Hawking Radiation Using Vqe Algorithm On Ibm Qu
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="extractions/extraction-quantum-simulation-of-the-sachdev-ye-kitaev-model-by-asymmetric-qubit/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quantum Simulation Of The Sachdev Ye Kitaev Model By Asymmetric Qubit
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="extractions/extraction-quantum-simulation-of-traversable-wormhole-inspired-quantum-teleporta/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quantum Simulation Of Traversable Wormhole Inspired Quantum Teleporta
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="extractions/extraction-quantum-simulation-of-traversable-wormhole-spacetimes-in-a-bose-einst/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quantum Simulation Of Traversable Wormhole Spacetimes In A Bose Einst
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="extractions/extraction-quantum-simulation-of-unruh-radiation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quantum Simulation Of Unruh Radiation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="extractions/extraction-quantum-simulation-with-hybrid-tensor-networks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quantum Simulation With Hybrid Tensor Networks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="extractions/extraction-qubit-models-of-black-hole-evaporation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Qubit Models Of Black Hole Evaporation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="extractions/extraction-replica-wormholes-and-the-black-hole-interior/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Replica Wormholes And The Black Hole Interior
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="extractions/extraction-sachdev-ye-kitaev-non-fermi-liquid-correlations-in-nanoscopic-quantum/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sachdev Ye Kitaev Non Fermi Liquid Correlations In Nanoscopic Quantum
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="extractions/extraction-simulating-quantum-field-theory-in-curved-spacetime-with-quantum-many/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Simulating Quantum Field Theory In Curved Spacetime With Quantum Many
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="extractions/extraction-simulation-of-the-massless-dirac-field-in-11d-curved-spacetime/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Simulation Of The Massless Dirac Field In 11d Curved Spacetime
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="extractions/extraction-snowmass-white-paper-quantum-aspects-of-black-holes-and-the-emergence/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Snowmass White Paper Quantum Aspects Of Black Holes And The Emergence
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="extractions/extraction-spin-systems-as-quantum-simulators-of-quantum-field-theories-in-curve/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Spin Systems As Quantum Simulators Of Quantum Field Theories In Curve
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="extractions/extraction-towards-quantum-simulation-of-black-holes-in-a-dc-squid-array/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Towards Quantum Simulation Of Black Holes In A Dc Squid Array
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="extractions/extraction-traversable-wormhole-with-double-trace-deformations-via-gravitational/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Traversable Wormhole With Double Trace Deformations Via Gravitational
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="extractions/extraction-traversable-wormholes-as-quantum-channels-exploring-cft-entanglement/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Traversable Wormholes As Quantum Channels Exploring Cft Entanglement
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="extractions/extraction-traversable-wormholes-via-a-double-trace-deformation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Traversable Wormholes Via A Double Trace Deformation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="extractions/extraction-tunneling-to-holographic-traversable-wormholes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tunneling To Holographic Traversable Wormholes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="extractions/extraction-variational-preparation-of-the-sachdev-ye-kitaev-thermofield-double/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Variational Preparation Of The Sachdev Ye Kitaev Thermofield Double
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="extractions/extraction-wormholes-and-holography-an-introduction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wormholes And Holography An Introduction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Novelty
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Novelty
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="novelty/novelty-conjugate-control-requirement-for-recovery-beyond-forward-simulation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Conjugate Control Requirement For Recovery Beyond Forward Simulation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="novelty/novelty-diagnosticdynamics-hierarchy-chaos-is-easier-than-semiclassical-bulk-emu/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Diagnosticdynamics Hierarchy Chaos Is Easier Than Semiclassical Bulk Emu
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="novelty/novelty-feasibility-boundary-kinematic-vs-interior-reconstruction-tasks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Feasibility Boundary Kinematic Vs Interior Reconstruction Tasks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="novelty/novelty-finite-size-ir-cutoff-and-reflection-law-for-breakdown-of-apparent-therm/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Finite Size Ir Cutoff And Reflection Law For Breakdown Of Apparent Therm
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="novelty/novelty-holographic-information-simulations-require-many-body-entanglement-and-s/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Holographic Information Simulations Require Many Body Entanglement And S
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="novelty/novelty-kinematic-horizon-simulations-require-metric-engineering-not-decoding-pr/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Kinematic Horizon Simulations Require Metric Engineering Not Decoding Pr
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="novelty/novelty-mechanism-certification-criterion-coherent-size-winding-is-a-discriminan/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mechanism Certification Criterion Coherent Size Winding Is A Discriminan
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="novelty/novelty-mechanism-dependent-noise-fragility-phase-coherent-size-winding-degrades/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mechanism Dependent Noise Fragility Phase Coherent Size Winding Degrades
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="novelty/novelty-observable-first-criterion-for-black-hole-simulation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Observable First Criterion For Black Hole Simulation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="novelty/novelty-route-separation-law-kinematic-vs-holographic-information/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Route Separation Law Kinematic Vs Holographic Information
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="novelty/novelty-validation-by-universality-windows/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Validation By Universality Windows
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Theories
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Theories
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="theories/dual-route-simulatability-metric-engineered-qft-vs-holographic-scrambler-emulati/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dual Route Simulatability Metric Engineered Qft Vs Holographic Scrambler Emulati
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="theories/dual-track-black-hole-simulation-principle-kinematic-horizons-vs-holographic-inf/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dual Track Black Hole Simulation Principle Kinematic Horizons Vs Holographic Inf
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="theories/horizon-encoded-hopping-universality-for-hawking-like-thermality/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Horizon Encoded Hopping Universality For Hawking Like Thermality
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="theories/operational-equivalence-classes-for-quantum-black-hole-simulation-revised/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Operational Equivalence Classes For Quantum Black Hole Simulation Revised
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="theories/operator-size-phase-coherence-as-the-mechanism-for-wormhole-teleportation-signal/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Operator Size Phase Coherence As The Mechanism For Wormhole Teleportation Signal
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="theories/scrambling-limited-simulatability-of-black-hole-information-tasks-revised/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Scrambling Limited Simulatability Of Black Hole Information Tasks Revised
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="schemas/extraction-schema/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Schema
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#bibliography" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bibliography
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#theories" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Theories
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#novelty" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Novelty
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#extractions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Extractions
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#schemas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schemas
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Data
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="artifacts">Artifacts<a class="headerlink" href="#artifacts" title="Permanent link">&para;</a></h1>
+<h2 id="bibliography">Bibliography<a class="headerlink" href="#bibliography" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="citations.bib">citations.bib</a> <em>(bibtex)</em>
+  BibTeX entries for every artifact in this export plus their source papers.</li>
+</ul>
+<h2 id="theories">Theories<a class="headerlink" href="#theories" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="theories/operator-size-phase-coherence-as-the-mechanism-for-wormhole-teleportation-signal/">Operator-Size Phase Coherence as the Mechanism for Wormhole Teleportation Signals (refined)</a> <em>(theory)</em>
+  This theory addresses when traversable-wormhole-inspired teleportation experiments/simulations on quantum devices should be interpreted as reflecting a specifically holographic/SYK-like mechanism ("teleportation-by-size-winding") versus more generic mechanisms (e.g., peaked-size distributions or simple thermalization) that can also yield teleportation-like signatures. The central claim is that a distinctive holographic mechanism requires (i) a well-defined operator-size decomposition (e.g., Pauli/Majorana strings), (ii) phase coherence across operator-size sectors so that a complex size-resolved quantity q(l) has an approximately linear phase in l ("size winding") and a coherence ratio R(l)=|q(l)|/P(l) near 1 over the dominant size support, and (iii) a two-sided coupling e^{i\mu V} that effectively cancels or reverses this winding for the appropriate sign of \mu, yielding a strong sign-asymmetry in mutual information/teleportation fidelity. In contrast, protocols can show teleportation in small-N or commuting/learned Hamiltonians even without coherent winding, via non-holographic mechanisms (peaked-size/thermalization), and therefore teleportation signals alone are not a sufficient certificate of holographic wormhole dynamics.</li>
+<li><a href="theories/horizon-encoded-hopping-universality-for-hawking-like-thermality/">Horizon-Encoded Hopping Universality for Hawking-like Thermality</a> <em>(theory)</em>
+  In a broad class of 1+1D analogue-gravity constructions where a static metric function f(x) (or equivalent local wave-speed profile) is encoded into a site-dependent nearest-neighbor hopping profile κn (fermionic/XY or bosonic hopping), the mere presence of a horizon (a zero of f, so κ changes sign or passes through zero in the appropriate mapping) generically yields an approximately thermal (Boltzmann) energy distribution for excitations transmitted to the exterior region, with an effective temperature set primarily by the local gradient f'(xh) (surface-gravity analogue) rather than by global equilibration. The theory explains why both superconducting-chain ‘lattice black hole’ experiments and classical lattice numerics recover exponential spectra, and it predicts structured, controllable deviations driven by finite chain length (IR cutoffs and reflections), coordinate choice (which modes are represented and whether the process appears as tunneling vs crossing), dispersion/truncation, and whether the observed radiation is stimulated (seeded) vs spontaneous (vacuum).</li>
+<li><a href="theories/dual-track-black-hole-simulation-principle-kinematic-horizons-vs-holographic-inf/">Dual-Track Black-Hole Simulation Principle (Kinematic Horizons vs Holographic Information)</a> <em>(theory)</em>
+  This theory posits that the feasibility of simulating black holes on quantum platforms bifurcates into two largely independent tracks with different success criteria and resource bottlenecks. Track A (kinematic horizon/QFT-in-curved-space analogues) simulates field propagation on a fixed effective metric (e.g., sonic horizons in BECs, SQUID transmission lines, superconducting lattice horizons, Dirac-in-curved-space mappings) and is validated by local spectra/correlations (thermal emission, partner correlations, redshift, tunneling rates). Track B (holographic/information-theoretic black holes) targets many-body systems believed to have gravitational duals (SYK/JT-like) and focuses on scrambling, Page transitions, decoding, and traversable wormhole teleportation; it requires thermofield-double-like entanglement, multi-copy operations, and often time reversal. Mixing validation criteria across tracks leads to false positives: e.g., a thermal Hawking-like spectrum in Track A does not imply interior reconstruction ability in Track B, while teleportation-like signals in Track B may arise without any geometric horizon in Track A.</li>
+<li><a href="theories/scrambling-limited-simulatability-of-black-hole-information-tasks-revised/">Scrambling-Limited Simulatability of Black-Hole Information Tasks (revised)</a> <em>(theory)</em>
+  This theory explains feasibility of quantum-computer simulations of black-hole <em>information</em> phenomena (as opposed to purely kinematic horizon analogues) through a hierarchical requirement on controllable access to both forward scrambling and its conjugate/inverse, plus entangled two-copy resources and precise subsystem partitioning. Evidence supports a three-tier hierarchy: (i) forward-only chaos/thermal diagnostics (OTOCs/level statistics/thermal spectra) are achievable with approximate Hamiltonians and moderate control; (ii) wormhole-teleportation-style demonstrations and Hayden–Preskill-style toy recovery require two-copy entanglement resources, calibrated couplings, and at least partial time reversal or conjugate dynamics; (iii) scalable high-fidelity decoding or interior reconstruction generically requires either exponentially small postselection probability or depth that grows rapidly with message size and/or code-subspace size, and is highly sensitive to noise. The theory also clarifies a key caveat: some teleportation-like signals can be produced by non-holographic mechanisms in specially structured or commuting models, so observing a signal is not sufficient to infer "semiclassical bulk" fidelity.</li>
+<li><a href="theories/dual-route-simulatability-metric-engineered-qft-vs-holographic-scrambler-emulati/">Dual-Route Simulatability: Metric-Engineered QFT vs Holographic Scrambler Emulation</a> <em>(theory)</em>
+  Quantum hardware can access black-hole physics through two structurally different routes with different scaling and validation: (1) Metric-engineered QFT-on-fixed-background simulations, where spacetime enters as spatially/time-dependent couplings in an effective low-dimensional field theory (e.g., site-dependent hopping encoding f(x) and horizons; squeezing Hamiltonians encoding Rindler/Unruh transformations; Dirac-in-curved-space mapped to trapped-ion QRM). These can yield direct Hawking/Unruh thermality and propagation/redshift signatures, often at single-particle or linearized-field level. (2) Holographic scrambler emulation, where one simulates a boundary many-body system believed to have a gravity dual (SYK/JT-inspired), and probes black-hole-like behavior via scrambling, OTOCs, teleportation-through-wormhole protocols, and decoding. Route (1) is kinematic and comparatively near-term; route (2) targets information-theoretic and interior-reconstruction signatures but requires large Hilbert spaces, TFD/EPR resources, and deep circuits or analog engineering of all-to-all randomness. The theory predicts that these routes are not interchangeable: matching a Hawking-like spectrum in route (1) does not imply success at decoding/Page-curve tasks in route (2), and conversely, demonstrating teleportation-by-size in route (2) does not validate semiclassical Hawking emission in route (1).</li>
+<li><a href="theories/operational-equivalence-classes-for-quantum-black-hole-simulation-revised/">Operational Equivalence Classes for Quantum Black-Hole Simulation (revised)</a> <em>(theory)</em>
+  A claim that a quantum computer (digital or analog) “simulates a black hole” is only meaningful relative to an operational equivalence class: (i) a specified target set of black-hole-relevant observables O (e.g., thermal Hawking/Unruh spectra and correlations; OTOC/level-statistics chaos diagnostics; teleportation-through-wormhole correlators; Hayden–Preskill decoding fidelity/success; Page-curve-like entropy behavior), (ii) an explicit mapping M that turns those observables into measurable quantities in a controllable quantum system, and (iii) a validation regime W where the theoretical relations among observables that define the intended phenomenon are expected to hold (universality window). Evidence supports that multiple inequivalent equivalence classes are currently accessible: (A) kinematic fixed-background QFT analogues (acoustic/photonic/superconducting/trapped-ion mappings of horizons, Unruh thermality, and single-particle curved-spacetime propagation), and (B) holographic/quantum-information analogues (SYK and related scramblers; traversable-wormhole teleportation protocols; decoding protocols; coarse-grained wormhole-as-channel formulations). The theory explains why different experiments legitimately claim “black-hole simulation” while targeting different O, and why stronger claims (interior reconstruction, unitary evaporation) require additional capabilities (TFD/EPR preparation, two-copy access, ability to implement U and U*, postselection or amplification, and a verifiable radiation partition). It also incorporates the ensemble-vs-single-instance issue: when gravitational path integrals/replica wormholes compute ensemble-averaged quantities, a hardware simulator implementing a single Hamiltonian instance may match only after specifying the relevant averaging/typicality assumptions and code-subspace restrictions.</li>
+</ul>
+<h2 id="novelty">Novelty<a class="headerlink" href="#novelty" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="novelty/novelty-observable-first-criterion-for-black-hole-simulation/">Novelty: Observable-first criterion for black-hole simulation</a> <em>(novelty)</em>
+  Derivable Unstated. The underlying ingredients (choosing observables, providing a mapping, checking some relations, and discussing regime-of-validity) are largely already present as practice in many papers, and the caution about single-signature insufficiency is explicit in at least some. What appears novel in aggregate is the explicit formalization into a portable, prescriptive criterion/checklist (O,M,R,W) and the framing of “black-hole simulation” as an operational equivalence-class claim rather than a single phenomenon; this looks more like a synthesized principle than an established, named standard in the sampled literature. The aggregated evidence suggests the underlying physical mechanisms for particular signatures are not new (and in some cases are explicitly established), while the novelty lies in packaging existing practice into a compact, device-agnostic criterion (O,M,R,W) for claim well-posedness plus an explicit capability/assumption checklist for claim strength. Most surveyed papers either exemplify parts of (O,M,R,W) for a specific platform/model or discuss resources/ensemble issues piecemeal, but do not state this as a general necessary-condition rule; thus the statement is best viewed as a synthesizing mechanistic/operational abstraction rather than a new physical mechanism. The aggregated evidence indicates that the explicit (O,M,R,W) equivalence-class framing and the normative, cross-paradigm classification principle are generally not stated as such in the assessed literature; rather, they are at best inferable by synthesizing across disparate reviews, surveys, and platform-specific papers. One NISQ traversable-wormhole/SYK paper comes closest by integrating multiple diagnostics and validation checks into an operational workflow, but it still stops short of articulating the broader equivalence-class principle as a general organizing framework for all black-hole simulation claims. Aggregated evidence suggests many ingredients are commonplace at the case-study level (papers already have some M and some checked observables), but the explicit elevation to a single prescriptive cross-modal standard (O,M,R,W) for what counts as a well-posed simulation claim is usually not stated as such. Some assessed papers support treating this as a synthesis/abstraction that follows naturally from comparing disparate signatures across subfields (i.e., “derivable but unstated”), while several others—especially narrow single-platform demonstrations or purely theoretical gravity papers—contain no comparable platform-spanning operational prescription, making the explicit cross-modal criterion appear genuinely new relative to those works. Overall, the best aggregate characterization is that the statement is a novel scope-expanding operational generalization: largely derivable from the literature in hindsight, but not established as an explicit community-wide criterion in the sampled papers. The aggregated evidence suggests the underlying limitations motivating caution are largely not new individually (many are explicit and, in reviews/white papers, fairly established), but the explicit “(O,M,R,W) checklist or the claim is underdetermined” principle is generally not stated as a named, cross-platform necessary-condition criterion in the surveyed papers. In some papers the ingredients appear in partial or peripheral form (e.g., noting insufficiency of single diagnostics; mentioning averaging/factorization caveats), so the novelty is best characterized as an abstraction/synthesis that makes implicit methodological requirements explicit and operational, rather than a newly discovered failure regime. Overall, this is strongest as a formalization that is mostly derivable from prior cautions, with pockets where it would read as genuinely new to narrower experimental papers that lack such meta-level criteria. Aggregated evidence indicates the novelty is primarily the explicit abstraction/checklist (O,M,R,W) as the unit for stating, comparing, and adjudicating simulation claims across otherwise incommensurate platforms, rather than any new physical effect or diagnostic. However, multiple papers contain enough ingredients that this criterion is plausibly reconstructible as a synthesis (derivable-but-unstated), and one paper indicates components may be explicitly present but peripheral in experimental-holography practice; thus the contribution is best characterized as a novel formalization/standardization of an implicit norm, not a wholly unprecedented idea. Relative to the assessed papers, the novelty lies primarily in codifying a prescriptive, observable-first comparison protocol (O,M,R,W) plus an explicit “single-signature is insufficient” underdetermination claim as a synthesized conclusion meant to apply across platforms and model families. The least-novel evidence comes from high-level syntheses (notably the Snowmass white paper) that already discuss many constituent ingredients (multiple targets; interpretational issues including ensemble vs single-instance), making the contribution best characterized as a stronger, centralized formulation and partially new synthesis rather than a wholly unprecedented discovery. Overall, the corpus supports that the statement is largely inferable from prior discussions but not commonly stated as an explicit, standard criterion.</li>
+<li><a href="novelty/novelty-mechanism-certification-criterion-coherent-size-winding-is-a-discriminan/">Novelty: Mechanism certification criterion: coherent size-winding is a discriminant for holographic-style teleportation</a> <em>(novelty)</em>
+  Derivable Unstated. Relative to the most relevant literature here, the underlying effect claims (existence of coherent size-winding, its relation to unwinding by coupling choice, and associated sign-asymmetries) are not novel: they are already explicitly discussed in the review-level treatment and operationalized/observed in the sparse-SYK teleportation simulation/experiment paper. Any remaining novelty is mainly in packaging/elevating a bundle of already-described diagnostics into a formalized, standalone “sufficient discriminator” and an explicit admonition about attribution, which reads as synthesis rather than discovery of a new phenomenon. The underlying mechanistic picture (linear size-dependent phases, cancellation by coupling sign, and alternative peak-size/thermalization mechanisms) appears explicitly and centrally in at least one broad review, and is analyzed in detail (including competing mechanisms and μ-sign behavior) in commuting/nonchaotic variants, reducing novelty of the basic mechanism. What remains novel is mainly the formalization into a sufficient operational discriminator with an explicit coherence-ratio test R(l)≈1 and a stronger “certification/attribution” reading (a practical decision rule rather than a descriptive mechanism), which is not stated as an established theorem across the assessed works. Relative to many broad reviews/white papers and adjacent black-hole/QI syntheses that discuss wormholes, scrambling, teleportation, or experimental platforms without proposing a single microscopic discriminator, this explicit ‘one-rule’ operator-size-based diagnostic is a new cross-cutting unification. However, the least-novel evidence is decisive for the core claim of unification: the review and Commuting-SYK paper already contain essentially the same conceptual unification (holographic size-winding vs non-holographic mimics) and the need to distinguish them, so the novelty here is primarily in explicit operationalization/packaging rather than in introducing a new unifying principle in the most directly relevant subliterature. Across most of the provided corpus (general scrambling/OTOC measurement papers, SYK platform proposals, black-hole information papers, and holography/channel-capacity discussions), this explicit cross-setting certification scope and its “do-not-attribute-without-(1)-(2)” rule is not stated and thus represents a genuine scope expansion relative to those works. However, in the closest adjacent sources (a scrambling review and a commuting-SYK analysis), the logic that size structure and small-N/commuting mimicry limit holographic interpretation is already present, making the criterion’s broad scope and boundary-setting largely an explicit elevation/packaging of derivable implications rather than entirely new content in that near literature. When aggregating across the paper set, the core limitation claim (“teleportation signals alone do not certify holographic wormhole dynamics; mimics exist”) is not novel because it is explicitly established and treated as central in both the general review and the Commuting-SYK work. The added novelty is mainly in elevating specific size-resolved phase-coherence conditions (linearity of arg q(l), high R(l)) plus the μ-sign reversal test into an explicit sufficient discriminator/decision criterion; however, the existence and experimental relevance of these kinds of size-winding/coherence caveats and mechanism competition are already explicitly discussed in the Commuting-SYK analysis, so overall this dimension is best judged as established rather than new within this corpus. Aggregating across papers, the dominant limiting evidence comes from the most relevant SYK-teleportation papers: they already contain essentially the same operator-size phase/coherence objects (q(l)/R(l) or close analogues) and use them diagnostically, which makes the present contribution largely a consolidation/standardization into a single triad-style operational test rather than a new abstraction. Relative to many broader black-hole/chaos/analogue-gravity/channel-framing works in the set, the operator-size phase-coherence diagnostic lens is absent and thus looks “new” there; however, that does not outweigh the explicit prior-art overlap in the immediate mechanism-diagnostics subliterature. Aggregating across papers, the main novelty is not the individual components (size-winding diagnostics; μ-sign asymmetry; multiple mechanisms for teleportation-like signals) but the explicit triad-as-a-rule and its elevation to a cross-study certification criterion. The closest relevant work (Commuting SYK) substantially supports the same practical conclusion and mechanism taxonomy, making the proposed criterion best viewed as a derivable-but-previously-unstated meta-regularity/operationalization rather than a clearly new empirical law established by the provided literature; relative to more distant reviews/theory/analogue-gravity papers, the criterion appears genuinely new simply because they do not address these size-resolved teleportation diagnostics.</li>
+<li><a href="novelty/novelty-conjugate-control-requirement-for-recovery-beyond-forward-simulation/">Novelty: Conjugate-control requirement for recovery (beyond forward simulation)</a> <em>(novelty)</em>
+  Derivable Unstated. The positive direction (that known decoders/teleportation-as-decoding constructions use U<em>/U^T with two-copy entanglement and projections) is explicitly established and widely summarized, so that portion is not novel. The more novel content, relative to most individual papers assessed here, is the generalized negative/limitation claim—framed as a generic failure mode—that without conjugate/inverse control, recovery fidelity cannot generically approach unity even if forward-only scrambling diagnostics appear correct; this necessity/no-go style phenomenon is typically not stated as an explicit, general empirical/operational claim and is best supported as a synthesis across multiple sources rather than a single prior statement. As a mechanism for Hayden–Preskill decoding and teleportation-as-decoding, the conjugate-control + two-copy + projection requirement is not novel (it is explicit and established in core decoding work and in the scrambling/decoding review literature). The more global framing—treating lack of conjugate-control as a generic obstacle across multiple recovery/reconstruction paradigms (including Petz/entanglement-wedge reconstructions) and contrasting this with forward-only scrambling diagnostics—appears to be largely a synthesis/abstraction beyond what several broader/holography/analogue papers explicitly articulate, but it is not supported here as a genuinely new mechanism given the strong prior explicit overlap in the decoding literature. Relative to the explicit prior review synthesis that already frames these protocol families under essentially the same shared resource picture (two copies + conjugate dynamics), the unification is not novel on this dimension. Relative to older conceptual papers and some broad reviews/white papers where the ingredients appear but the single master unifier is not stated as such, the statement is best viewed as an abstraction that is largely derivable from the constellation of existing results rather than a genuinely new unification; however, the existence of an explicit, established synthesis weighs strongly toward non-novelty overall. Relative to the aggregate evidence, the main novelty is the cross-protocol, cross-model scope expansion into an overarching necessity statement for recovery tasks (as opposed to protocol-specific use of time reversal in OTOC measurement or particular decoding circuits). The forward-only exception for kinematic/analogue Hawking observables is already explicitly established in the literature, so novelty is not in claiming “black-hole-like signals need inversion,” but in asserting a broad operational dividing line specifically for decoding/reconstruction fidelity across heterogeneous model classes and experimental/algorithmic protocols. Relative to the strongest overlapping prior art (which already explicitly discusses reliance of decoding/teleportation protocols on U</em>, U^T and two-copy resources), the core content is largely not novel. The main residual novelty is the generalization/framing as a broad, generic near-unity-fidelity impossibility claim for forward-only access (i.e., a necessary-condition/no-go statement rather than protocol-specific requirements), which several broader reviews/experimental/analogue papers do not articulate explicitly and would at best be obtained by synthesizing multiple arguments; however, this stronger phrasing is not uniformly established as a formal theorem in the cited set. Relative to decoding-focused sources, the core claim (conjugate-control + two-copy/projective resources are required for generic high-fidelity recovery) is not novel: it is explicitly established and repeatedly used as a constructional primitive. Any residual novelty is mainly in packaging this as a single, simulator-oriented control-resource reframing applied across multiple task families, which many non-decoding papers do not themselves adopt; however, this added value is closer to a peripheral synthesis/organization than a new abstraction within the recovery literature. As a cross-paper synthesis, the core claim is weakly novel at best: at least one comprehensive review already treats the need for two-copy resources plus conjugate/time-reversed evolution as part of the standard toolkit for decoding/teleportation-style demonstrations and distinguishes this regime from forward-only diagnostics, making the meta-regularity largely already articulated in the literature. However, because multiple other broad reviews/white papers in the set do not explicitly state the necessity as a generalized rule (even if it is inferable from their examples), the statement still adds value mainly as an explicit consolidation/foregrounding of a pattern that is otherwise often only derivable by synthesis.</li>
+<li><a href="novelty/novelty-feasibility-boundary-kinematic-vs-interior-reconstruction-tasks/">Novelty: Feasibility boundary: kinematic vs interior-reconstruction tasks</a> <em>(novelty)</em>
+  Derivable Unstated. As a global phenomenon/effect claim, the boundary is not novel relative to this aggregated literature: multiple papers already instantiate the kinematic feasibility side, and decoding-focused work explicitly demonstrates the reconstruction side’s harsher resource/success scaling and required primitives; moreover, one review already states essentially this two-class feasibility separation as a central organizing observation. What remains comparatively novel in many individual primary experiments is the explicit cross-platform naming and packaging of this boundary as a single law-like feasibility taxonomy, but the existence/content of the split is already established in the provided set. Because the decoding papers already explicitly analyze two-copy requirements, U<em>/U^T access, and postselection/amplification scaling, the core mechanistic resource list is not novel relative to that subliterature. The more novel contribution supported by the aggregation is the cross-context operationalization: packaging these ingredients into a general, hardware-oriented checklist/feasibility split that applies across disparate “black-hole simulation” platforms (especially kinematic/analog QFT simulators and general curved-spacetime simulation papers where such a boundary is not stated), with particular added emphasis on verifiable radiation partitioning as a practical bottleneck. As a unification claim, the separation and main bottlenecks appear to be already explicit and treated as established knowledge in cross-cutting treatments; the novelty is mainly rhetorical/organizational (a bundled boundary/checklist) rather than a new unifying principle. However, the inclusion of an explicitly “experimentally verifiable radiation partition” as part of the feasibility boundary is less foregrounded in some sources and may be an elevation of a usually implicit verification burden rather than a wholly new idea. The aggregated paper evidence suggests the ingredients are mostly present but scattered: decoding-focused works analyze postselection/amplification scaling and asymptotic-vs-small-N gaps, while analogue/OTOC/platform papers discuss what is measurable/feasible for kinematic diagnostics and highlight practical constraints. What is not typically explicit in any one paper is the consolidated, prescriptive cross-platform split into two operational feasibility classes with a specific capability/verification checklist for when “reconstruction/decoding” claims become meaningful; several assessed papers treat this broad cross-regime feasibility boundary as extending beyond their stated scope. However, because multiple reviews already gesture at cross-platform prospects and scaling caveats, the novelty is best characterized as a synthesized generalization that is largely derivable from the existing (dispersed) literature rather than wholly unprecedented. Relative to the full assessed corpus, the constraint content is not substantively novel: decoding-focused theory papers and broad reviews already explicitly derive/state essentially the same necessary ingredients and unfavorable scaling, including the partition/factorization caveat and (in several sources) ensemble/typicality qualifications. The main contribution is an organizational repackaging/operationalization for evaluating ‘black-hole simulation’ claims across platforms, which is useful rhetorically and procedurally but does not outweigh the presence of explicit, established prior articulations in key reconstruction/decoding references. The split between kinematic analogue signatures and harder information-theoretic/interior-reconstruction goals, and the identification of key resource bottlenecks (two-copy access/TFD, U</em> or reversal, postselection/Grover-like amplification) is largely consistent with themes already present across multiple papers, so the main novelty is packaging them as a single explicit, normative “feasibility boundary” principle tied to an operational-equivalence-class adjudication lens. Aggregated assessments contain no strong evidence that this exact prescriptive taxonomy is explicitly established as a named principle; instead it appears mostly as a synthesis/abstraction that is straightforward to infer from prior discussions but typically unstated as a single organizing rule. As an across-paper meta-regularity, the kinematic-vs-reconstruction feasibility split is not overall novel because at least one dedicated scrambling/quantum-simulator review already explicitly synthesizes this exact kind of near-term feasibility boundary and its scaling limitations. Relative to many single-platform experimental papers (analogue Hawking/Unruh demonstrations, single mapping studies) and single-program theoretical proposals (SYK hardware proposals, specific teleportation simulations), the claim is largely an explicit synthesis that is derivable but typically unstated there; however, the existence of explicit review-level statements weighs heavily toward this being established rather than new.</li>
+<li><a href="novelty/novelty-validation-by-universality-windows/">Novelty: Validation by universality windows</a> <em>(novelty)</em>
+  Derivable Unstated. As a phenomenon/effect claim, it is not novel: the cited effects and their windowed validity are already treated as established targets in several papers (including review-style discussions). Any novelty lies in how these effects are operationally packaged into a validation rule rather than in discovering a new effect. No provided paper is identified as already stating this cross-platform “validation by universality windows” principle as a general organizing criterion for black-hole simulation claims; instead, the ingredients are widely present (platform comparisons, shared diagnostics, and regime-of-validity discussions). The aggregated evidence therefore supports that the statement is largely a meta-level synthesis: in survey-style sources it appears plausibly derivable but unstated as an explicit principle, whereas in many platform-specific or model-specific papers it would read as a genuinely new organizing unification beyond their explicit framing. Overall novelty is mixed but leans toward a synthesis/formalization rather than a new scope expansion: in review/overview prior art that already juxtaposes analogue and holographic/scrambling platforms with their relevant universal diagnostics and windows, the statement is effectively already established. In many single-paradigm experimental, proposal, and theory papers, however, an explicit cross-modality validation principle is not stated; in those contexts the statement functions as a cross-domain generalization that is largely supported by the ingredients (windowing/limitations) but not articulated as an overarching rule. The underlying limitations and failure regimes themselves are overwhelmingly not novel: in many assessed papers they are central, explicit, and treated as established constraints (stimulated-vs-spontaneous ambiguity, finite-size termination of exponential growth, dispersion/cutoff windows, and regime dependence of Lyapunov fits). The main novelty, where present, is the systematic operational consolidation into a single validation prescription (“declare W; validate universality inside W; outside-W deviations need not falsify”) and, for some subliteratures, the explicit emphasis on mapping ensemble-averaged gravitational predictions to single-instance hardware via stated averaging/typicality/code-subspace assumptions; this is often a higher-level synthesis/reframing rather than a new constraint discovered in any one paper. The aggregated assessments indicate that none of the papers explicitly formulates “validation by universality windows” as the central general principle for adjudicating and comparing black-hole-simulation claims across platforms; rather, the ingredients (observables, mappings, regime restrictions) appear dispersed and case-specific. A small subset provides enough material that this reframing looks like a natural synthesis (hence plausibly derivable but previously unstated), while most papers—despite strong operational content—do not state this meta-level prescription. The underlying windowed-universality idea for Hawking-like analogues is already explicitly established in at least one cross-platform synthesis, which substantially limits novelty on this dimension. The remaining novelty is mainly the prescriptive, cross-subfield formalization of “universality windows” as an operational validation criterion spanning both horizon-thermality analogues and scrambling/chaos diagnostics; many papers contain the ingredients but typically do not state the general meta-rule in this explicit, platform-agnostic form.</li>
+<li><a href="novelty/novelty-mechanism-dependent-noise-fragility-phase-coherent-size-winding-degrades/">Novelty: Mechanism-dependent noise fragility: phase-coherent size-winding degrades faster under dephasing than peaked-size teleportation</a> <em>(novelty)</em>
+  Genuinely New. In the aggregated evidence, the closest papers establish the two mechanisms and report noise sensitivity in a general sense, but they do not formulate or demonstrate the differential fragility claim as an operational diagnostic (e.g., injected dephasing that selectively kills the winding-mediated signal while leaving peaked-size teleportation comparatively intact). Thus, relative to this set of papers, the mechanism-dependent dephasing fragility is not established and remains a novel, testable effect-level prediction. The underlying intuition that dephasing destroys interference is not new; given the already-articulated role of phase alignment in size-winding, the differential fragility claim is largely a consequence that could be derived from those formalisms but is not typically stated as a named, mechanism-separating prediction. The novelty is therefore mainly in elevating this consequence into a clear, testable, mechanism-dependent noise diagnostic (selective loss of sign-of-μ asymmetry and fidelity peaks under size-sector phase scrambling), rather than proposing a fundamentally new teleportation mechanism. The unification of mechanisms itself (winding vs peaked-size/thermalization) is not novel given explicit-established prior articulation. What appears novel in aggregate is the elevation of <em>mechanism-dependent dephasing fragility</em> (and associated suppression of sign-of-μ asymmetry) as a general, experimentally actionable diagnostic principle for distinguishing the two mechanisms across NISQ implementations; this is largely a synthesis/extension built on existing mechanism separation rather than a new taxonomy. In the aggregated evidence, essentially none of the papers explicitly establish this as a general principle or widely recognized experimental diagnostic for mechanism identification in two-sided wormhole-teleportation implementations. The closest countervailing evidence is that it appears inferable from the combination of (i) qualitative NISQ noise/Trotter discussions and (ii) the general understanding that dephasing destroys phase-sensitive interference, making the claim largely derivable rather than wholly unprecedented; however, as a concrete, mechanism-contrastive, experimentally actionable prescription centered on size-sector phase coherence and sign-of-μ asymmetry, it is not stated as such in these works. No assessed paper explicitly formulates or tests this mechanism-dependent, size-sector-phase-specific dephasing fragility as an operational constraint/diagnostic for interpreting NISQ wormhole-teleportation experiments. The closest in-scope antecedents make the non-uniqueness/insufficiency point explicit and contain size-based or interference-based formalisms from which such fragility can plausibly be inferred, but they do not elevate the selective dephasing prediction (and its asymmetric impact on sign-of-μ effects) to an explicit result; thus the aggregate evidence supports the claim as largely derivable in hindsight rather than established. Against papers that already build the size-basis magnitude/phase framework and explicitly distinguish peaked-size vs size-winding, the added content is mainly an operational emphasis (using dephasing fragility as a discriminant) rather than a new conceptual basis; this looks like a natural consequence of treating winding as an interference resource. Relative to the broader gravity/QI and simulation papers that do not use operator-size phase-coherence as a central lens, the reframing is new, but the strongest prior-art constraint in this set comes from work where the size-winding vs peaked-size distinction is already established. Relative to the assessed papers, the specific <em>cross-mechanism, cross-implementation</em> noise-response rule (winding-based signatures being selectively more fragile to phase-randomizing noise than peaked-size/thermalization signatures, with suppression of sign-of-μ asymmetry as a key readout) is not presented as an established empirical synthesis and is not directly supported by an explicit multi-mechanism, controlled dephasing comparison. The strongest “least-novel” evidence is that the general intuition (coherent-interference effects are dephasing-sensitive) makes the claim plausibly derivable from background principles and review-level expectations, but it still appears unstated as a recognized meta-regularity linking <em>operator-size phase coherence</em> to <em>diagnostic noise fragility</em> of wormhole-teleportation signals.</li>
+<li><a href="novelty/novelty-kinematic-horizon-simulations-require-metric-engineering-not-decoding-pr/">Novelty: Kinematic-horizon simulations require metric engineering, not decoding primitives</a> <em>(novelty)</em>
+  Derivable Unstated. The core phenomenon-level content (Track A Hawking-like signatures are achievable via effective-metric engineering and local measurements, without TFD/two-copy/decoding primitives) is already explicit and established in several Track A-focused papers and reviews, so it is not novel as an empirical claim. Relative to some broader black-hole/quantum-information reviews that discuss both analogue Hawking phenomena and holographic decoding/teleportation but do not explicitly contrast their resource requirements, the statement functions mainly as an articulated cross-context separation that is often derivable from existing demonstrations rather than newly discovered. The underlying kinematic mechanism (metric engineering → horizon kinematics → thermal/partner-correlation signatures) is explicitly established in multiple Track-A works, so that portion is not novel. The more novel contribution is the explicit <em>resource-bottleneck contrast</em>—stating as a principle that Track-A demonstrations are independent of decoding/TFD/U<em> primitives that are central in Track-B—since in the assessed corpus this contrast is typically only implicit or inferable by juxtaposing Track-A and Track-B discussions rather than stated as a mechanistic necessity/sufficiency claim. The core content is largely a synthesis of established practice—many papers implicitly assume Track A can be validated locally and Track B requires decoding-like resources—yet the explicit, principle-level resource taxonomy is generally not stated as an organizing claim in the surveyed literature. Some broad/contrastive papers provide enough ingredients that this separation is plausibly derivable by a careful reader, but the aggregated evidence does not show it as an explicit, established unifying statement; thus the novelty is mainly in explicitly elevating and formalizing the separation rather than in introducing a new technical result. The strongest counterevidence is that essentially this same Track A feasibility framing (metric engineering + local measurements as the dominant requirements) is already explicitly established in core analogue-gravity and QFT-in-curved-space simulation references, making the statement largely non-novel within its stated domain. Some review-style sources enumerate platforms/regimes without stating a single, uniform 'resource-dominance' conclusion, so the exact cross-modality packaging is at most a synthesis; but given explicit prior articulations of the kinematic-analogue requirements, the aggregated evidence supports classifying the statement as established rather than a substantive new scope expansion. The kinematics-not-dynamics limitation and the dominance of analog control/measurement systematics for Track-A signatures are not novel (they are repeatedly explicit and treated as established in analogue-gravity experiment/simulation papers). The more novel element is the explicitly stated, actionable separation in terms of required experimental primitives/resources ("no TFD/two-copy/U</em> needed for Track A" and "don’t validate Track B with Track-A signatures"), which is often only implicit/derivable from the combination of analogue-gravity caveats and holographic/decoding resource analyses—though some holography-adjacent papers already effectively demonstrate closely related “thermality/signature insufficiency” warnings. Given the least-novel evidence papers, the core reframing that kinematic-horizon simulations are primarily about metric/coupling engineering plus local readout (rather than decoding primitives) appears already explicit and established in the analogue-gravity and curved-spacetime-simulation framing. The incremental novelty is mainly in making the contrast with holographic/decoding primitives maximally explicit as an operational feasibility criterion, but this is better characterized as a consolidation/foregrounding of standard practice than a new abstraction. The Track-A-specific core regularity (metric engineering + local correlators suffice; decoding primitives are not required) is not novel because it is explicitly synthesized as standard in the analogue-gravity review literature. The only potentially novel element is the cross-literature elevation of this as part of a two-track, non-transferable-diagnostics guideline; across the assessed corpus this appears mostly as a higher-level synthesis that is at best derivable from combining separate literatures rather than being explicitly established in any single place.</li>
+<li><a href="novelty/novelty-holographic-information-simulations-require-many-body-entanglement-and-s/">Novelty: Holographic-information simulations require many-body entanglement and scrambling validation, not horizons</a> <em>(novelty)</em>
+  Derivable Unstated. Relative to the surveyed literature, the core content (Track B defined by information observables/resources rather than horizons) is already explicit and established in reviews and primary holography/SYK-teleportation work; novelty is therefore low. The most distinctive strengthening supported by the provided evidence is the “false-positive” pressure: commuting/integrable SYK can show teleportation-like signals despite slow/non-chaotic dynamics, sharpening the need for independent scrambling/chaos validation beyond any single signature. That sharpening is better viewed as an added constraint/interpretation emphasis rather than a new phenomenon. Relative to review/theory papers that already articulate the TFD–wormhole, scrambling–OTOC, and reconstruction/decoding mechanisms, the statement is largely a restatement (low novelty). The most novel element is the explicit, lab-facing contrast claim (“not horizons”) and the elevation of a necessity-style operational checklist, which is only implicit or peripheral in some simulator-focused papers; however, this contrast is still broadly derivable from the juxtaposition of analogue-horizon (Track A) versus holographic-information (Track B) literatures rather than being a new mechanism. The Track-B ingredients themselves (scrambling diagnostics, TFD/ER=EPR motivation, decoding/teleportation observables) are largely explicit and established in review and core theory papers; thus that content is not strongly novel. The more novel contribution is the explicit, prescriptive operational separation—stating at the principle level that Track-B validation is fundamentally horizon-independent and should be judged by many-body information observables/resources—which appears in the assessed set mostly as a synthesis that can be inferred from surveys/juxtapositions rather than as an explicitly stated, widely recognized taxonomy; ambiguity results (e.g., pseudo-/commuting-SYK producing “teleportation-like” signals) support the need for track-specific validation but do not by themselves supply this overarching rule. As a scope/generalization claim, the core content is largely not novel because it is already explicit and central in key Track-B simulation proposals and surveys (digital minimal AdS/CFT; scrambling-to-simulators reviews), and is also consistent with the broader holography literature that treats information diagnostics in non-geometric boundary models (e.g., SYK evidence alongside JT/gravity toy models). The incremental novelty is mainly emphasis/packaging: elevating an operationally crisp separation criterion (“validate by information observables, not horizons”) and bundling concrete implementation-resource requirements and known confounders (e.g., teleportation-like signals in commuting/integrable or small-N/sparse instances) into a single statement; this latter consolidation is present but more peripheral/uneven across individual papers. As a constraint on what counts as evidence for holographic/information-theoretic claims, the core content is largely not novel relative to the established holography/interior-reconstruction literature that already denies “thermality implies interior reconstruction” and emphasizes entanglement/replica/coding structure. The remaining novelty is mostly in packaging: making a concise, cross-platform, experiment-facing rule about diagnostic separation and false-positive risks (especially emphasizing small-N/commuting/sparse mimics) that many simulation/analogue papers only imply via scattered caveats rather than state as an explicit principle. The core content (“Track B is about information observables and entanglement/scrambling resources, not horizon engineering”) is largely already explicit in several holography/quantum-information papers and is at least implicit as standard validation practice in others, so it is not a new scientific concept per se. The incremental novelty lies mainly in elevating this into a clean, track-specific operational criterion and making the ‘not horizons’ exclusion explicit as part of a broader taxonomy; some papers only gesture at this separation peripherally (e.g., warning that certain signals are not uniquely geometric). Given the strongest counterevidence, the core meta-regularity claimed by the statement (Track-B success hinges on many-body entanglement/scrambling/decoding validators and can be realized without explicit horizons) is already explicitly stated and treated as established in key synthesis sources. Any residual novelty is mainly rhetorical/organizational (framing as a ‘track’ rule and emphasizing misvalidation risk), which is not a new cross-paper empirical regularity relative to the most relevant prior syntheses.</li>
+<li><a href="novelty/novelty-route-separation-law-kinematic-vs-holographic-information/">Novelty: Route-separation law (kinematic vs holographic information)</a> <em>(novelty)</em>
+  Derivable Unstated. No paper in the provided set appears to explicitly formulate this as a general, cross-platform non-interchangeability law about what different simulator mappings can and cannot certify; instead, the ingredients appear as separate sub-literatures (analogue Hawking/Unruh vs. scrambling/decoding). The novelty therefore mainly lies in synthesizing and elevating a cross-route negative implication into a single phenomenon-level principle, rather than in discovering either class of signatures themselves (which are explicit and established). Most assessed papers treat one route in depth (either kinematic analogue QFT or holographic scramblers/decoders) but do not articulate the bidirectional non-implication as a general mechanistic/resource claim about simulator classes; when both strands appear (e.g., in newsletters/white papers), they are juxtaposed without being elevated to an explicit law. The least-novel evidence is route-internal (e.g., pair-creation vs internal scrambling distinctions for Page behavior), but it does not state the cross-architecture separation that kinematic metric encoding and holographic information-processing capacities are non-interchangeable; thus the statement reads as a synthesized principle that is largely derivable from, but not explicitly stated in, prior work. In the assessed set, no paper clearly states this specific two-route simulator taxonomy plus the explicit non-substitutability claim as a central, established principle; rather, it is generally inferable only by synthesizing discussions scattered across analogue-gravity and holography-to-simulator literatures. Some papers do make related contrasts (e.g., holographic simulation vs analogue-gravity limitations) or broad surveys that could motivate such a classification, but the explicit two-route framing and its operational demarcation are usually absent and thus represent a higher-level synthesis beyond individual works. Aggregated paper-level assessments mostly indicate this cross-paradigm separation is not explicitly established as a general law in the individual works; rather, it is a synthesis/generalization that becomes apparent when combining route-specific literatures and resource-caveat discussions (e.g., analogue-gravity feasibility vs TFD/two-copy/deep-circuit demands for decoding). However, a subset of assessments judge the explicit taxonomy plus the strong non-transferability claim as beyond straightforward restatement of prior discussions (i.e., closer to genuinely new framing relative to many individual papers), while the least-novel evidence does not show prior explicit statement of the same route-separation principle (it instead concerns extensions within the scrambler route). Overall, the best-supported aggregate categorization is a derivable-but-previously-unstated scope expansion (a synthesized cross-domain inference rule), not an already established explicit claim. The underlying limitations (thermality ≠ unitarity/decoding; scrambling signatures ≠ guaranteed semiclassical bulk/Hawking emission) are already explicitly established in several core theory/model papers, so the statement is not novel at the level of the basic constraint. What is comparatively novel is the crisp, cross-paradigm operational packaging as a general ‘route-separation’ validation law for quantum-simulation programs; many implementation/proposal papers only contain pieces of it as caveats, making the full bidirectional non-interchangeability often only derivable by synthesis rather than explicitly stated. Aggregated evidence suggests this is mostly a meta-level synthesis/reframing rather than a previously explicit organizing principle: many papers contain the necessary ingredients on one side or the other, but do not state the dual-route non-interchangeability as a general taxonomy for interpreting laboratory claims. However, the least-novelty evidence indicates partial overlap in spirit with earlier high-level modular decompositions of evaporation/information flow (separating pair-creation vs internal dynamics/decoding structure), so the contribution is best characterized as making an implicit cross-literature distinction explicit and practically simulator-facing, rather than inventing wholly new conceptual content. No provided paper explicitly states, as a central cross-platform conclusion, this two-route non-interchangeability as a general validation law linking simulator class → accessible/validated signature class; most works remain within one route and do not articulate the mutual non-implication across routes. However, the ingredients making the separation plausible are widespread and, in hindsight, the meta-claim is largely obtainable by synthesizing (a) analogue-gravity evidence focused on kinematics with (b) scrambler/teleportation evidence focused on information tasks plus (c) holographic Page-curve/reconstruction theory; thus the novelty is primarily in the explicit cross-literature empirical synthesis and operational prescription rather than in a newly discovered within-route effect.</li>
+<li><a href="novelty/novelty-finite-size-ir-cutoff-and-reflection-law-for-breakdown-of-apparent-therm/">Novelty: Finite-size IR cutoff and reflection law for breakdown of apparent thermality</a> <em>(novelty)</em>
+  Derivable Unstated. The existence of finite-size–induced low-energy deviations and a rough IR cutoff scale is not new at the statement level, because it is already explicitly reported (though not necessarily framed as a general “law”) in a key curved-spacetime-to-hopping-chain simulation paper. What remains more novel is the stronger universality/ordering claim (IR-first and late-time-first as the generic earliest breakdown mode across implementations), the explicit emphasis on boundary-condition dependence as a primary control knob, and the prescription that impedance-matched/absorbing boundaries systematically extend the thermal window; however, the superconducting-chain evidence showing larger high-energy deviations than low-energy deviations weakens the universality of the “IR-first” ordering as stated. The main non-novelty evidence is that an explicit finite-size/IR-cutoff explanation with dependence on implementation details is already present in the discrete curved-spacetime mapping work (even if not always treated as the headline contribution). Relative to several other lattice-horizon and analogue-Hawking papers that mention reflections or finite regions only qualitatively, the specific 'IR-first' breakdown framing and the explicit mitigation prescription are typically not stated, but appear largely derivable from standard mode-quantization/reflection-time reasoning rather than constituting a wholly new mechanism. Given that the horizon→hopping mapping and near-horizon control of effective temperature are already explicit and central in at least one broad mapping paper, and that specific experiments/simulations already show exponential spectra in finite chains, the proposed “IR-first/late-time breakdown with a tunable EIR(L,BC) and reflection-delay prescription” looks like a synthesized unifying articulation of standard finite-size/reflection physics applied to these mappings. In the provided assessments, this rule is not identified as an explicitly stated, established principle in the cited works; it appears instead to be a natural, largely derivable but previously unstated cross-paper generalization. Relative to the continuum-focused papers in the set (firewalls/replica wormholes/QES/scrambling/analogue-fluid reviews), the discrete, device-facing scope extension to finite nearest-neighbour hopping chains plus the explicit IR-cutoff/window language is not present and functions as a genuine scope expansion. Relative to the most directly related discrete curved-spacetime and superconducting-chain works, finite-size/boundary effects are discussed but typically not elevated into a generic, ordering-specific (IR-first, late-time-first) law with an explicit controllable E_IR(L,BC); thus the contribution is best characterized as a synthesis/generalization that is plausibly inferable from standard finite-size/reflection physics but not established as a recognized result across the literature. The generic limitation (finite size and reflections spoil late-time signals) is not novel relative to key hopping-chain Hawking experiments and some simulation-focused papers where these constraints are already explicit. The more specific packaging as an IR-first breakdown with an explicit, tunable scale E_IR(L,BC) and boundary-engineering prescriptions appears only sporadically: at least one curved-spacetime many-body simulation paper already discusses an effective IR scale tied to L/d and recommends increasing L/engineering boundaries (making this formulation largely prefigured), while many other papers lack this quantified, IR-first framing (where it is better viewed as a synthesis/standardization of scattered caveats). Across the aggregated assessments, the closest prior lattice papers already supply the metric↔hopping/horizon framework (so that part is established), but they do not appear to have elevated a named, general “IR-first breakdown via finite-size reflections/cutoffs” rule with an explicit E_IR(L,BC) control-parameter summary as a standalone organizing principle. The most supported novelty is therefore a higher-level articulation/packaging of finite-size deviation phenomenology that is plausible to derive from existing finite-chain physics and the established mapping, rather than a clearly documented, previously established claim in the core lattice papers. Relative to the assessed papers, the novel element is elevating scattered single-platform observations into an explicit, portable cross-study scaling/diagnostic claim: an IR-first deviation pattern parameterizable by EIR(L,BC) and systematically improvable by boundary engineering. The least-novel evidence comes from papers that already contain pieces of the story (finite-size/mode limitations and exponential windows within one system), making the overall claim plausibly synthesizable from prior results even though no assessed paper is identified as explicitly stating this specific EIR(L,BC) reflection/IR-first law as established knowledge.</li>
+<li><a href="novelty/novelty-diagnosticdynamics-hierarchy-chaos-is-easier-than-semiclassical-bulk-emu/">Novelty: Diagnostic–dynamics hierarchy: chaos is easier than semiclassical bulk emulation</a> <em>(novelty)</em>
+  Derivable Unstated. The component facts (diagnostics are observable; clean Schwarzian/large-N holographic dynamics and decoding are hard; teleportation-like signatures can be non-holographic) are individually explicit and in places already effectively argued, but the cross-platform, law-like ordering is usually not stated as a single phenomenon-level claim in the papers and often must be inferred from resource estimates, finite-N limitations, and review-level comparisons. Overall novelty therefore lies primarily in the explicit synthesis/packaging of an operational hierarchy spanning multiple experimental/numerical approaches, rather than in discovering an entirely new diagnostic or failure mode. Most individual mechanistic prerequisites (two-copy + conjugate dynamics for decoding/teleportation; postselection amplification; OTOC/time-reversal control issues) are not novel relative to dedicated decoding/scrambling treatments, which already state them explicitly. The main novelty is the law-like, simulator-oriented packaging as a single organizing hierarchy spanning digital NISQ experiments, analogue engineered Hamiltonians, and kinematic horizon analogues; across the provided set this appears largely as a synthesis/unification of known mechanisms rather than a newly derived mechanism, though some of the statement’s stronger ‘generic’ claims about exponential scaling and broad noise sensitivity are not established in several of the cited experimental/proposal/overview papers and instead require cross-literature inference. Relative to the existing scrambling-to-simulators review-level synthesis, the hierarchy is largely a relabeling/condensation of an already explicit organizing framework rather than a substantively new unification. Relative to most individual non-review papers (analogue Hawking experiments, SYK device proposals, wormhole/teleportation simulations, holography/QI theory), the explicit cross-platform, resource-graded hierarchy is typically not stated and would be at most derivable by synthesizing their constraints; however, the presence of an explicit established review that already performs much of this organization substantially reduces overall novelty of the unification claim. Relative to many individual platform papers (single-modality analogue Hawking demonstrations, single-platform SYK/teleportation experiments, or idealized decoding theory), the explicit <em>cross-modal</em> hierarchy is often not stated and would need synthesis/abstraction; in that sense the statement is a useful generalization beyond those works. However, the least-novelty evidence is strong: a dedicated scrambling-to-simulators review already explicitly articulates much of the same cross-platform landscape and the kinematic-vs-holographic separation, so the hierarchy (as a scope-expansion claim) is not genuinely new overall; its novelty is mainly in emphasis/packaging rather than new scope relative to that review. Most of the underlying limitation content is not novel relative to this corpus: decoding/postselection/depth constraints and noise fragility are already explicitly discussed in reviews and decoding papers, and the kinematic-versus-holographic caveat is explicit in multiple analogue-simulation works; the false-positive caution is explicit in at least one targeted analysis (commuting SYK). The main incremental novelty is therefore best characterized as a synthesized, statement-level “hierarchy”/feasibility ordering across platforms and task classes (diagnostics vs bulk-emulation/decoding) rather than new quantitative bounds or newly discovered failure regimes. Aggregated evidence suggests the hierarchy is largely a synthesis/packaging: many papers contain the ingredients (kinematic vs dynamical distinctions; ‘scrambling not sufficient’; separate discussions of teleportation/HP protocols and their resource demands), but do not elevate them into a single cross-platform, resource-graded taxonomy meant to guide experimental feasibility claims. However, parts of the cautionary content overlap with existing discussions that already emphasize diagnostic accessibility and insufficiency for holography, reducing novelty for the core ‘diagnostics easier than bulk’ message to “derivable”; and one recent contribution explicitly reframes teleportation-like diagnostics as multiply realizable (“pseudo-holographic”), which substantially anticipates the statement’s false-positive caveat. The core ordering is not fully new in epistemic status because it is already explicitly articulated in at least one review (and qualitatively anticipated in a white-paper-style synthesis), so the statement is best viewed as consolidating and strengthening an existing community-level synthesis rather than discovering an entirely new meta-regularity. What remains more novel relative to many primary research and single-platform experimental papers is the explicit cross-modality elevation to a general predictive rule (those papers typically support it only as “derivable but unstated” from their narrow evidence), but the presence of an explicit review-level articulation is strong evidence against “genuinely new.”</li>
+</ul>
+<h2 id="extractions">Extractions<a class="headerlink" href="#extractions" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="extractions/extraction-quantum-holography-in-a-graphene-flake-with-an-irregular-boundary/">Extraction: Quantum Holography in a Graphene Flake with an Irregular Boundary.</a> <em>(extraction)</em>
+  Mesoscopic graphene flake realization of the complex-fermion Sachdev-Ye-Kitaev (SY) model; Sachdev-Ye-Kitaev (complex-fermion) model / Sachdev-Ye model; Holographic duality between SYK and two-dimensional (1+1D) dilaton gravity in AdS2 — extremal black hole</li>
+<li><a href="extractions/extraction-measuring-the-scrambling-of-quantum-information/">Extraction: Measuring the scrambling of quantum information</a> <em>(extraction)</em>
+  Interferometric protocol for measuring out-of-time-order correlators (OTOCs); Distinguishability (projection) protocol to measure |F(t)|^2; Cavity quantum electrodynamics implementation of nonlocal spin models for probing scrambling; Kicked top as a paradigmatic chaotic many-body model for probing scrambling; Kitaev's model (SYK-like random fermion model) and cold-atom realizations</li>
+<li><a href="extractions/extraction-quantum-field-simulator-for-dynamics-in-curved-spacetime/">Extraction: Quantum field simulator for dynamics in curved spacetime</a> <em>(extraction)</em>
+  FLRW (Friedmann-Lemaître-Robertson-Walker) cosmology simulator in a Bose-Einstein condensate; Sonic (acoustic) black hole analogue in fluids/BECs; Analogue Hawking-radiation experiments (BECs, fluids, light, ions)</li>
+<li><a href="extractions/extraction-efficient-decoding-for-the-hayden-preskill-protocol/">Extraction: Efficient decoding for the Hayden-Preskill protocol</a> <em>(extraction)</em>
+  Probabilistic postselection-based decoder for Hayden-Preskill recovery; Deterministic decoder combining postselection idea with Grover-like search; Gao–Jafferis–Wall traversable wormhole decoding / wormhole teleportation protocol</li>
+<li><a href="extractions/extraction-dirac-equation-in-11-dimensional-curved-spacetime-and-the-multiphoton/">Extraction: Dirac Equation in (1+1)-Dimensional Curved Spacetime and the Multiphoton Quantum Rabi Model.</a> <em>(extraction)</em>
+  Multiphoton Quantum Rabi Model simulation of a (1+1)-dimensional black hole with a trapped ion; Naked-source (constant-acceleration) weak-gravity mapping to QRM</li>
+<li><a href="extractions/extraction-creating-and-probing-the-sachdev-ye-kitaev-model-with-ultracold-gases-1/">Extraction: Creating and probing the Sachdev-Ye-Kitaev model with ultracold gases: Towards experimental studies of quantum gravity</a> <em>(extraction)</em>
+  Experimental proposal to realize the Sachdev-Ye-Kitaev (SYK) model with ultracold fermionic atoms</li>
+<li><a href="extractions/extraction-observation-of-quantum-hawking-radiation-and-its-entanglement-in-an-a/">Extraction: Observation of quantum Hawking radiation and its entanglement in an analogue black hole</a> <em>(extraction)</em>
+  Analogue black hole formed in a one-dimensional Bose–Einstein condensate; Density–density correlation (G^(2)) Fourier-transform protocol for extracting Bogoliubov pair correlations and entanglement; One-dimensional Gross–Pitaevskii numerical simulation with short-pulse Bragg-fluctuation injection</li>
+<li><a href="extractions/extraction-dirac-equation-in-2-dimensional-curved-spacetime-particle-creation-an/">Extraction: Dirac equation in 2-dimensional curved spacetime, particle creation, and coupled waveguide arrays</a> <em>(extraction)</em>
+  Classical optical simulation of the Dirac equation in curved 1+1D spacetime using binary waveguide arrays; Single-particle analog of gravitational pair creation via Dirac wavepacket dynamics; Simulation of the Dirac equation in curved spacetime with cold atoms on optical lattices (cited work)</li>
+<li><a href="extractions/extraction-mapping-curved-spacetimes-into-dirac-spinors/">Extraction: Mapping curved spacetimes into Dirac spinors</a> <em>(extraction)</em>
+  Local phase mapping of 1+1D curved-spacetime Dirac equation to flat-spacetime Dirac spinor; Family of 1+1-dimensional traversable-wormhole spacetimes with shape function b(r) = b0^2 / r</li>
+<li><a href="extractions/extraction-quantum-simulation-of-unruh-radiation/">Extraction: Quantum simulation of Unruh radiation</a> <em>(extraction)</em>
+  Quantum simulation of Hawking-Unruh radiation in a driven Bose-Einstein condensate; Quantum circuit model for non-inertial objects: a uniformly accelerated mirror; Sonic analog of gravitational black holes in Bose-Einstein condensates; Hawking radiation from an acoustic black hole on an ion ring; Electromagnetic/optical simulations of gravitational effects (waveguides and Newton–Schrödinger analogues); Observation of quantum Hawking radiation and its entanglement in an analogue black hole</li>
+<li><a href="extractions/extraction-a-bound-on-chaos/">Extraction: A bound on chaos</a> <em>(extraction)</em>
+  Out-of-time-order correlator (OTOC) and squared commutator C(t); Thermofield double state and two-sided correlators; Qubit models and random quantum circuits as models of scrambling; Bulk near-horizon scattering in AdS (shockwave/eikonal analysis) and the Rindler scattering bound; Bound on chaos: λ_L ≤ 2π/β (λ_L ≤ 2π k_B T / ħ)</li>
+<li><a href="extractions/extraction-digital-quantum-simulation-of-minimal-adscft-1/">Extraction: Digital Quantum Simulation of Minimal AdS/CFT.</a> <em>(extraction)</em>
+  Digital quantum simulation of the Sachdev–Ye–Kitaev (SYK) model as a minimal AdS/CFT</li>
+<li><a href="extractions/extraction-qubit-models-of-black-hole-evaporation/">Extraction: Qubit models of black hole evaporation</a> <em>(extraction)</em>
+  Qubit models of black hole evaporation (discrete pair-creation qubit framework)</li>
+<li><a href="extractions/extraction-how-to-make-a-quantum-black-hole-with-ultra-cold-gases/">Extraction: How to make a quantum black hole with ultra-cold gases</a> <em>(extraction)</em>
+  Experimental realization of the Sachdev-Ye-Kitaev (SYK) model with ultra-cold fermionic atoms via photoassociation</li>
+<li><a href="extractions/extraction-dirac-fast-scramblers/">Extraction: Dirac fast scramblers</a> <em>(extraction)</em>
+  Dirac Fast Scrambler: Gross–Neveu–Yukawa (GNY) large-N generalization of SYK in higher dimensions</li>
+<li><a href="extractions/extraction-models-for-unitary-black-hole-disintegration/">Extraction: Models for unitary black hole disintegration</a> <em>(extraction)</em>
+  Effective Hilbert-space qubit model for unitary black hole evaporation</li>
+<li><a href="extractions/extraction-quantum-simulation-of-traversable-wormhole-spacetimes-in-a-bose-einst/">Extraction: Quantum simulation of traversable wormhole spacetimes in a Bose-Einstein condensate</a> <em>(extraction)</em>
+  Quantum simulation of traversable wormhole spacetimes in a Bose-Einstein condensate; dc-SQUID array proposal for 1+1D Ellis wormhole simulation; Analogue black-hole simulations in Bose-Einstein condensates (prior literature)</li>
+<li><a href="extractions/extraction-towards-quantum-simulation-of-black-holes-in-a-dc-squid-array/">Extraction: Towards Quantum Simulation of Black Holes in a dc-SQUID Array</a> <em>(extraction)</em>
+  Quantum simulation of 1+1D radial black-hole sections using a dc-SQUID array embedded in an open transmission line; Analogue Hawking Radiation in a dc-SQUID Array Transmission Line (Nation, Blencowe, Rimberg, Buks, 2009); One-dimensional sections of exotic spacetimes with superconducting circuits (Sabín, New J. Phys. 2018)</li>
+<li><a href="extractions/extraction-hawking-page-transition-on-a-spin-chain/">Extraction: Hawking-Page transition on a spin chain</a> <em>(extraction)</em>
+  Hawking–Page transition simulation via coupling-averaged Loschmidt echo in the Heisenberg XX spin chain; Fermionized lattice simulation via Jordan–Wigner mapping (free-fermion Loschmidt echo); Generalized spin chain with longer-range hoppings to include higher Tr(U^n) operators and nested Gaussian averaging for finite 't Hooft coupling; Polyakov loop realization via impurity in spin-chain initial state (order-parameter probe); Complex-coupling (fugacity) extension: complex-temperature Loschmidt echo and thimble deformation</li>
+<li><a href="extractions/extraction-matters-of-gravity-the-newsletter-of-the-division-of-gravitational-ph/">Extraction: Matters of Gravity, The Newsletter of the Division of Gravitational Physics of the American Physical Society, Volume 50, December 2017</a> <em>(extraction)</em>
+  Jeff Steinhauer's Bose–Einstein condensate analog black hole experiments; Ted Jacobson's review of Hawking radiation from analog black holes; Sachdev–Ye–Kitaev (SYK) model (as discussed in conference talks); John Preskill's remark on simulating strongly-coupled QFTs appearing in AdS/CFT using quantum computers; Mentions of Beni Yoshida's decoding results and the Gao–Jafferis–Wall traversable-wormhole protocol</li>
+<li><a href="extractions/extraction-creating-and-probing-the-sachdev-ye-kitaev-model-with-ultracold-gases/">Extraction: Creating and probing the Sachdev-Ye-Kitaev model with ultracold gases: Towards experimental studies of quantum gravity</a> <em>(extraction)</em>
+  Proposal to realize the Sachdev-Ye-Kitaev (SYK) model with ultracold fermionic atoms in optical lattices; Control-qubit-based protocol to measure out-of-time-order correlators (OTOCs) and single-particle Green's functions in the SYK simulator</li>
+<li><a href="extractions/extraction-analogue-simulations-of-quantum-gravity-with-fluids/">Extraction: Analogue simulations of quantum gravity with fluids</a> <em>(extraction)</em>
+  Bose-Einstein condensate acoustic black hole with measured Hawking-partner entangled phonon pairs; Parametrically modulated Bose-Einstein condensate simulation of Unruh radiation; Quantum fluid of light simulating rotating (2+1)-D black hole and sonic ergoregion with observed superradiance; Planar Anti-de Sitter black-hole analogue realized with a nonrelativistic BEC in (2+1) dimensions; Relativistic Bose-Einstein condensate models whose acoustic spacetime obeys Nordström scalar gravitation equations; Fluid-system modified dispersion relations as analogues of Planck-scale / Lorentz-violating corrections in quantum gravity; Numerical simulations in a fluid of light showing phonon backreaction and excitation of quasi-normal modes</li>
+<li><a href="extractions/extraction-quantum-simulation-with-hybrid-tensor-networks/">Extraction: Quantum Simulation with Hybrid Tensor Networks.</a> <em>(extraction)</em>
+  Hybrid tensor networks suggested for quantum-gravity thought experiments and high-energy toy models (e.g., SYK/AdS-related models, Hayden–Preskill style thought experiments)</li>
+<li><a href="extractions/extraction-wormholes-and-holography-an-introduction/">Extraction: Wormholes and holography: an introduction</a> <em>(extraction)</em>
+  Connections between holography and quantum simulators (referenced)</li>
+<li><a href="extractions/extraction-quantum-simulation-of-traversable-wormhole-inspired-quantum-teleporta/">Extraction: Quantum simulation of traversable-wormhole-inspired quantum teleportation in a chaotic binary sparse SYK model</a> <em>(extraction)</em>
+  Quantum-hardware implementation of traversable-wormhole-inspired teleportation using a binary sparse SYK model; Binary-coupling sparse Sachdev–Ye–Kitaev (SYK) model; Traversable wormhole teleportation protocol (SYK boundary realization); Operator size-winding diagnostics (winding size distribution q(l) and coherence ratio R(l))</li>
+<li><a href="extractions/extraction-sachdev-ye-kitaev-non-fermi-liquid-correlations-in-nanoscopic-quantum/">Extraction: Sachdev-Ye-Kitaev Non-Fermi-Liquid Correlations in Nanoscopic Quantum Transport.</a> <em>(extraction)</em>
+  Sachdev-Ye-Kitaev (complex) model</li>
+<li><a href="extractions/extraction-spin-systems-as-quantum-simulators-of-quantum-field-theories-in-curve/">Extraction: Spin systems as quantum simulators of quantum field theories in curved spacetimes</a> <em>(extraction)</em>
+  Spin-1/2 chain as a quantum simulator of (1+1)-D quantum field theory in curved spacetime; Simulation of FLRW-expanding-universe Majorana particle production using the transverse-field Ising model with time-dependent transverse field; Observation of the Unruh effect through entanglement Hamiltonian mapping of the transverse-field Ising model; Hawking radiation / black-hole thermal radiation (motivational mention and future target)</li>
+<li><a href="extractions/extraction-variational-preparation-of-the-sachdev-ye-kitaev-thermofield-double/">Extraction: Variational Preparation of the Sachdev-Ye-Kitaev Thermofield Double</a> <em>(extraction)</em>
+  Variational preparation of the Sachdev-Ye-Kitaev thermofield double via VQE</li>
+<li><a href="extractions/extraction-black-hole-signatures-in-the-finite-temperature-critical-ising-chain/">Extraction: Black-Hole Signatures in the Finite-Temperature Critical Ising Chain</a> <em>(extraction)</em>
+  Finite-temperature critical transverse-field Ising chain as a holographic simulator of BTZ black hole physics</li>
+<li><a href="extractions/extraction-commuting-syk-a-pseudo-holographic-model/">Extraction: Commuting SYK: a pseudo-holographic model</a> <em>(extraction)</em>
+  Commuting SYK model (q-local bi-fermion X_i construction); Traversable wormhole teleportation protocol (two-sided coupling e^{-i μ V}); N = 7 sparse SYK 5-term learned Hamiltonian (Google Sycamore experiment, referenced); Size-winding property of operator growth (phase linear in operator size)</li>
+<li><a href="extractions/extraction-entanglement-wedge-reconstruction-and-the-information-paradox/">Extraction: Entanglement wedge reconstruction and the information paradox</a> <em>(extraction)</em>
+  Sachdev-Ye-Kitaev (SYK) model; Haar-random unitary qubit toy model (random unitary model of boundary dynamics); Thermofield Double (TFD) state</li>
+<li><a href="extractions/extraction-mimicking-black-hole-event-horizons-in-atomic-and-solid-state-systems/">Extraction: Mimicking black hole event horizons in atomic and solid-state systems</a> <em>(extraction)</em>
+  Sachdev-Ye-Kitaev model; Digital quantum simulation algorithm for SYK/cSYK; cSYK realization with ultracold gases (Danshita, Hanada, Tezuka); cSYK realization in an irregular graphene flake (Landau-level platform); SYK with semiconductor quantum wires coupled to a disordered quantum dot; SYK realization in Fu–Kane superconductor (TI surface proximitized by superconductor with irregular hole trapping vortices); Protocols to measure out-of-time-order correlators (OTOCs) and scrambling</li>
+<li><a href="extractions/extraction-analogue-hawking-radiation-and-quantum-soliton-evaporation-in-a-super/">Extraction: Analogue Hawking radiation and quantum soliton evaporation in a superconducting circuit</a> <em>(extraction)</em>
+  Waveguide-like SQUID-array superconducting transmission line realizing sine-Gordon solitons (analogue JT black hole)</li>
+<li><a href="extractions/extraction-quantum-information-scrambling-from-holography-to-quantum-simulators/">Extraction: Quantum information scrambling: from holography to quantum simulators</a> <em>(extraction)</em>
+  Many-body wormhole-inspired teleportation circuit (Gao-Jafferis-Wall analog); Sachdev–Ye–Kitaev (SYK) model; Thermofield-double state and its eternal black-hole dual; Hayden–Preskill recovery and Yoshida–Kitaev decoding protocols; Out-of-time-ordered correlator (OTOC) measurement protocols and thermal OTOC; Operator size distribution and size-winding mechanism; Trapped-ion and Rydberg-atom quantum simulators for holographic analogs</li>
+<li><a href="extractions/extraction-einstein-rosen-bridge-from-the-minimal-length/">Extraction: Einstein-Rosen bridge from the minimal length</a> <em>(extraction)</em>
+  Traversable Sachdev-Ye-Kitaev (SYK) wormhole implemented on a quantum processor (referenced)</li>
+<li><a href="extractions/extraction-gravitational-wave-induced-scrambling-delay-in-syk-wormhole-teleporta/">Extraction: Gravitational Wave-Induced Scrambling Delay in SYK Wormhole Teleportation</a> <em>(extraction)</em>
+  Gravitational-Wave-Inspired Wormhole-Influenced Teleportation Protocol in the SYK model; Boundary Strain Bilinear Operator H_strain (i γ_i γ_j projection of SYK_4)</li>
+<li><a href="extractions/extraction-snowmass-white-paper-quantum-aspects-of-black-holes-and-the-emergence/">Extraction: Snowmass White Paper: Quantum Aspects of Black Holes and the Emergence of Spacetime</a> <em>(extraction)</em>
+  Sachdev-Ye-Kitaev model; Jackiw-Teitelboim gravity; Traversable wormhole / wormhole teleportation protocol; Quantum gravity in the lab / laboratory quantum simulation of holographic systems</li>
+<li><a href="extractions/extraction-cool-horizons-for-entangled-black-holes/">Extraction: Cool horizons for entangled black holes</a> <em>(extraction)</em>
+  Powerful quantum computer acting on Hawking radiation (thought-experiment of Alice); Preparation of the thermofield-double (TFD) / entangled two-black-hole state by unitary operations on radiation</li>
+<li><a href="extractions/extraction-simulating-quantum-field-theory-in-curved-spacetime-with-quantum-many/">Extraction: Simulating quantum field theory in curved spacetime with quantum many-body systems</a> <em>(extraction)</em>
+  One-to-one mapping between massless quantum fields in static 1+1 curved spacetime and site-dependent bosonic/fermionic hopping models; Numerical simulation of analogue Hawking radiation on the lattice site-dependent hopping model; Study of quantum chaos and fastest scrambling via OTOCs and level statistics in the mapped lattice models</li>
+<li><a href="extractions/extraction-traversable-wormholes-as-quantum-channels-exploring-cft-entanglement/">Extraction: Traversable wormholes as quantum channels: exploring CFT entanglement structure and channel capacity in holography</a> <em>(extraction)</em>
+  Traversable Wormhole as a Quantum Channel (coarse-grained code-subspace mapping)</li>
+<li><a href="extractions/extraction-editorial-new-frontiers-in-holographic-duality/">Extraction: Editorial: New frontiers in holographic duality</a> <em>(extraction)</em>
+  Quantum simulation of information scrambling and information mirroring by black holes; Teleportation via traversable-wormhole protocols implemented on quantum simulators; Use of quantum circuits to simulate aspects of quantum spacetime and black-hole dynamics</li>
+<li><a href="extractions/extraction-black-hole-on-a-chip-proposal-for-a-physical-realization-of-the-sachd/">Extraction: Black Hole on a Chip: Proposal for a Physical Realization of the Sachdev-Ye-Kitaev model in a Solid-State System</a> <em>(extraction)</em>
+  Solid-state realization of the Sachdev-Ye-Kitaev (SYK) model via Majorana zero modes at a TI/SC interface; Mentioned digital quantum simulation proposals for the SYK model; Mentioned ultracold-gas realization proposals for the Sachdev-Ye model; Related solid-state SYK proposal using semiconductor quantum wires coupled to a disordered quantum dot</li>
+<li><a href="extractions/extraction-black-holes-complementarity-or-firewalls/">Extraction: Black holes: complementarity or firewalls?</a> <em>(extraction)</em>
+  Quantum computation on the early Hawking radiation to predict late radiation modes (projection operator \hat{P}^i); Qubit/bit toy models of black hole evaporation; Using external spins entangled with an AdS gauge theory (N=4 SYM on S^3) as a reference to avoid time/gravity constraints on quantum computation</li>
+<li><a href="extractions/extraction-digital-quantum-simulation-of-minimal-adscft/">Extraction: Digital Quantum Simulation of Minimal AdS/CFT.</a> <em>(extraction)</em>
+  Digital quantum simulation of the Sachdev-Ye-Kitaev (SYK) model (minimal AdS/CFT); Ancilla-controlled time inversion protocol for reversible evolution; Ancilla-based n-time correlation / OTOC measurement protocol</li>
+<li><a href="extractions/extraction-quantum-simulation-of-the-sachdev-ye-kitaev-model-by-asymmetric-qubit/">Extraction: Quantum simulation of the Sachdev-Ye-Kitaev model by asymmetric qubitization</a> <em>(extraction)</em>
+  Quantum simulation of the Sachdev-Ye-Kitaev (SYK) model via asymmetric qubitization</li>
+<li><a href="extractions/extraction-simulation-of-the-massless-dirac-field-in-11d-curved-spacetime/">Extraction: Simulation of the massless Dirac field in 1+1D curved spacetime</a> <em>(extraction)</em>
+  Mapping of the 1+1D massless Dirac field in curved spacetime (Simpson metric) onto a site-dependent isotropic XY / Hubbard model; Quantum simulation of Hawking radiation and curved spacetime with a superconducting on-chip black hole (as cited)</li>
+<li><a href="extractions/extraction-traversable-wormholes-via-a-double-trace-deformation/">Extraction: Traversable wormholes via a double trace deformation</a> <em>(extraction)</em>
+  Traversable Einstein-Rosen bridge of an eternal BTZ black hole via a double-trace deformation; Dynamical (unitary) model of quantum teleportation implemented as V = Σ_i P_i^{QA} U_i^{B}; Hayden–Preskill model: black holes as mirrors and information recovery from Hawking radiation</li>
+<li><a href="extractions/extraction-tunneling-to-holographic-traversable-wormholes/">Extraction: Tunneling to Holographic Traversable Wormholes</a> <em>(extraction)</em>
+  Holographic simulation of AdS4 traversable wormholes via a coupled-pair-of-CFTs dual to Einstein–Maxwell + charged fermion</li>
+<li><a href="extractions/extraction-quantum-simulation-of-hawking-radiation-using-vqe-algorithm-on-ibm-qu/">Extraction: Quantum Simulation of Hawking Radiation Using VQE Algorithm on IBM Quantum Computer</a> <em>(extraction)</em>
+  Quantum Simulation of Hawking Radiation Using VQE Algorithm on IBM Quantum Computer</li>
+<li><a href="extractions/extraction-information-retrieval-from-hawking-radiation-in-the-non-isometric-mod/">Extraction: Information retrieval from Hawking radiation in the non-isometric model of black hole interior: Theory and quantum simulation</a> <em>(extraction)</em>
+  Quantum simulation of decoding Hawking radiation in the non-isometric model of black hole interior (modified Hayden-Preskill)</li>
+<li><a href="extractions/extraction-quantum-simulation-of-hawking-radiation-and-curved-spacetime-with-a-s/">Extraction: Quantum simulation of Hawking radiation and curved spacetime with a superconducting on-chip black hole</a> <em>(extraction)</em>
+  Quantum simulation of Hawking radiation and curved spacetime with a superconducting on-chip black hole</li>
+<li><a href="extractions/extraction-replica-wormholes-and-the-black-hole-interior/">Extraction: Replica wormholes and the black hole interior</a> <em>(extraction)</em>
+  Quantum-computer simulation of black-hole amplitudes to implement the Petz map for entanglement-wedge reconstruction</li>
+<li><a href="extractions/extraction-traversable-wormhole-with-double-trace-deformations-via-gravitational/">Extraction: Traversable wormhole with double trace deformations via gravitational shear and sound channels</a> <em>(extraction)</em>
+  Quantum-computer simulation of a simplified sparse Sachdev-Ye-Kitaev (SYK) model; Holographic teleportation / thermofield-double teleportation protocol realized in SYK-type models (theoretical proposals)</li>
+<li><a href="extractions/extraction-escape-of-quantum-information-across-an-analogue-black-hole-horizon/">Extraction: Escape of quantum information across an analogue black hole horizon</a> <em>(extraction)</em>
+  Analogue black hole realized via a position-dependent isotropic XY spin chain</li>
+</ul>
+<h2 id="schemas">Schemas<a class="headerlink" href="#schemas" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="schemas/extraction-schema/">Extraction Schema</a> <em>(extraction-schema)</em>
+  Extract any mentions of simulating black holes or black-hole-like physics using quantum computing/quantum simulation, including the target gravitational model, mapping/encoding, algorithms, resource estimates, observables, results, limitations, and validation methods.</li>
+</ul>
+<h2 id="data">Data<a class="headerlink" href="#data" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="data/theory-store.json">Theory Store</a> <em>(theory_store)</em>
+  Is it possible to simulate black holes using quantum computing?</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026 Mir Sakhawat Hossain
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.top", "navigation.indexes", "toc.follow", "search.suggest", "search.highlight", "content.code.copy"], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
